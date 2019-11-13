@@ -27,5 +27,4 @@ return [
     'down/:id'=>'home/index/down',
     'tags/:keyword'=>'home/tags/index',
     'chat/:id'=>'home/chat/index',
-
 ];
