@@ -58,3 +58,69 @@
 [ sql ] [ SQL ] SELECT * FROM `link` WHERE  `open` = 1 ORDER BY `sort` ASC [ RunTime:0.000977s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.001953s ]
 [ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[2019-11-13T10:18:00+08:00] 127.0.0.1 GET cc.cn/
+[运行时间：0.287017s] [吞吐率：3.48req/s] [内存消耗：3,119.20kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\index_index.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'list',
+  14 => 'style',
+  15 => 'js',
+  16 => 'demo_time',
+  17 => 'adList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006001s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir`,`c`.`catname` FROM `article` `a` LEFT JOIN `category` `c` ON `a`.`catid`=`c`.`id` ORDER BY `createtime` DESC LIMIT 15 [ RunTime:0.004001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `feast` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '10-17'  AND `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '11-13'  AND `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ad` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `ad` WHERE  `open` = 1  AND `as_id` = 1 ORDER BY `sort` ASC [ RunTime:0.001000s ]
