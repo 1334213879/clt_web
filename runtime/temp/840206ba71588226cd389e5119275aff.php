@@ -1,0 +1,558 @@
+<?php /*a:1:{s:70:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\dh_zzdb.html";i:1573616829;}*/ ?>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>食品经营许可证_人力资源许可证_劳务派遣许可证_海关进出口许可证_淘钉智能财税资质代办理中心</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/zzdb.css"/>
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!--[if lte IE 8]>
+    <script src="js/html5-shiv.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <![endif]-->
+    <!--<script src="<script>(function() {var _53code = document.createElement("script");_53code.src = "https://tb.53kf.com/code/code/10180830/1";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(_53code, s);})();</script>"></script>-->
+  	<script>(function() {var _53code = document.createElement("script");_53code.src = "https://tb.53kf.com/code/code/10180830/1";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(_53code, s);})();</script></head>
+<body>
+<!--网站头部-->
+
+<!-- 10月淘钉智能财税活动 -->
+<style>
+    .anniver_nav {width: 100%;height: 62px;background: url(images/10yue_nav.gif) top center;cursor: pointer;position: fixed;left: 0;top: 0; z-index: 888;}
+    .anniver_nav a {display: block;height: 62px;}
+</style>
+<div style="height:62px" class="otherp"></div>
+<div class="anniver_nav">
+    <a href="http://tb.53kf.com/code/client/10180830/1" target="_blank"></a>
+</div>
+<script>
+    var otherp=location.search.slice(1,3);
+    if(otherp=="op"){
+        $(".anniver_nav").hide();
+        $(".otherp").hide();
+    }
+</script>
+<!-- 10月淘钉智能财税活动 end-->
+<header>
+    <div class="top">
+        <div class="center clearfix">
+            <div class="tel"><a href="javascript:;">淘钉智能财税首页</a></div>
+            <div class="phone">
+                <ul>
+                    <li><a href="./zcgs.php">注册公司</a>|</li>
+                    <li><a href="./dljz.php">代理记账</a>|</li>
+                    <li><a href="./cqzc.php">商标注册</a>|</li>
+                    <li><a href="./cqzc.php">专利申请</a>|</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="contact clearfix">
+        <div class="center clearfix">
+            <h1>
+                <a href="index.php"><img src="picture/logo1.png"/></a>
+            </h1>
+            <nav>
+
+                <ul class="clearfix">
+                    <li><a href="./index.php">网站首页</a></li>
+                    <li><a href="./zcgs.php">注册公司</a></li>
+                    <li><a href="./dljz.php">代理记账</a></li>
+                    <li><a href="./zzdb.php">资质代办</a></li>
+                    <li><a href="./zscq.php">知识产权</a></li>
+                    <li><a href="./gsbg.php">公司变更</a></li>
+<!--                    <li><a href="./3a.php">证书办理</a></li>-->
+                    <li><a href="./zxgs.php">注销公司</a></li>
+                </ul>
+            </nav>
+            <div class="dh clearfix">
+                <img src="picture/tel_03.png" alt="电话">
+                <h3>400-029-1105</h3>
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    $(function(){
+        $("#cut,.cut_zhe,.cut_city").hover(function(){
+            $(".cut_city").css("display","block");
+            $(".cut_zhe").css("display","block");
+            var a = $(".site").html();
+            $(".need").html(a);
+        },function(){
+            $(".cut_city").css("display","none");
+            $(".cut_zhe").css("display","none");
+        })
+
+    })
+</script><!--网站主体-->
+<div class="main">
+    <!--banner-->
+    <div class="banner">
+        <div class="center">
+            <!--<a href="javascript:;" id="shangwutongzzdb">立即办理</a>-->
+        </div>
+    </div>
+    <!--我们的优势-->
+    <div class="advantage wow fadeInUp">
+        <div class="center">
+            <h2>我们的优势</h2>
+            <h5>全程网上办理，选择经验丰富代理人，快速为您代办资质</h5>
+            <div class="item clearfix">
+                <div class="portion">
+                    <div class="outer">
+                       <div class="within">
+                           5<span>年</span>
+                       </div>
+                    </div>
+                    <span class="title">资质代办经验</span>
+                    <p>5年资深行业各类资质代办经验。政策变化全掌握</p>
+                </div>
+                <div class="portion">
+                    <div class="outer">
+                        <div class="within">
+                            98<span>%</span>
+                        </div>
+                    </div>
+                    <span class="title">办理通过率高</span>
+                    <p>全程一站式资质服务，成功率高。首次通过率最高可达98%</p>
+                </div>
+                <div class="portion">
+                    <div class="outer">
+                        <div class="within">
+                            30<span>天</span>
+                        </div>
+                    </div>
+                    <span class="title">高效急速代办</span>
+                    <p>代办资质不同，具体服务时间也不同最快20-30个工作日不等</p>
+                </div>
+            </div>
+            <!--新加-->
+            <div class="aptitude clearfix">
+                <p class="char">已成功为890位客户代办！</p>
+                <a href="javascript:;" id="shangwutongzzdb" class="clearfix"><img src="picture/telll.png" alt=""><p>400-029-1105</p></a>
+            </div>
+        </div>
+    </div>
+
+    <!--一键开启 急速办理-->
+    <div class="transaction wow fadeInUp">
+        <div class="center">
+            <h2>一键开启 急速办理</h2>
+            <h5>速度快，0风险</h5>
+            <div class="item clearfix">
+                <div class="module">
+                    <ul>
+                        <li class="pic"><img src="picture/pic_03.png" alt=""></li>
+                        <li class="title">食品经营许可证</li>
+                        <li class="cont">餐饮、食品经销必备。最快40个工作日。<p></p></li>
+                        <li class="button">
+                            <a href="javascript:;" id="shangwutongzzdb">代办资料</a><a href="javascript:;" id="shangwutongzzdb">点击办理</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="module">
+                    <ul>
+                        <li class="pic"><img src="picture/pic_05.png" alt=""></li>
+                        <li class="title">人力资源许可证</li>
+                        <li class="cont">培训、招聘、劳务外包等必备。最快60个工作日。 <p></p></li>
+                        <li class="button">
+                            <a href="javascript:;" id="shangwutongzzdb">代办资料</a><a href="javascript:;" id="shangwutongzzdb">点击办理</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="module">
+                    <ul>
+                        <li class="pic"><img src="picture/pic_07.png" alt=""></li>
+                        <li class="title">劳务派遣许可证</li>
+                        <li class="cont">劳务人员派遣、从事社保等必备。最快30个工作日。
+                            <p></p></li>
+                        <li class="button">
+                            <a href="javascript:;" id="shangwutongzzdb">代办资料</a><a href="javascript:;" id="shangwutongzzdb">点击办理</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="module">
+                    <ul>
+                        <li class="pic"><img src="picture/pic_09.png" alt=""></li>
+                        <li class="title">进出口许可证</li>
+                        <li class="cont">进出口商贸公司必备。最快15个工作日<p></p></li>
+                        <li class="button clearfix">
+                            <a href="javascript:;" id="shangwutongzzdb">代办资料</a><a href="javascript:;" id="shangwutongzzdb">点击办理</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--新加-->
+            <div class="aptitude clearfix">
+                <p class="char">没找到您想办理的资质？</p>
+                <a href="javascript:;" id="shangwutongzzdb" class="clearfix"><img src="picture/qq_lan.png" alt=""><p>立即咨询</p></a>
+            </div>
+        </div>
+    </div>
+
+    <!--只需4步 轻松拿证-->
+    <div class="easy wow fadeInUp">
+        <div class="center">
+            <h2>只需4步 轻松拿证</h2>
+            <h5>如遇到任何问题，都可以拨打免费咨询电话：400-029-1105</h5>
+            <div class="item">
+                <ul class="clearfix">
+                    <li>
+                        <img src="picture/easy_03.png" alt="">
+                        <p>预约咨询</p>
+                    </li>
+                    <li class="arrows"><img src="picture/easy_12.png" alt=""></li>
+                    <li>
+                        <img src="picture/easy_05.png" alt="">
+                        <p>材料申报</p>
+                    </li>
+                    <li class="arrows"><img src="picture/easy_12.png" alt=""></li>
+                    <li>
+                        <img src="picture/easy_07.png" alt="">
+                        <p>提交办理</p>
+                    </li>
+                    <li class="arrows"><img src="picture/easy_12.png" alt=""></li>
+                    <li>
+                        <img src="picture/easy_09.png" alt="">
+                        <p>成功拿证</p>
+                    </li>
+
+                </ul>
+            </div>
+            <!--新加-->
+            <div class="aptitude clearfix">
+                <p class="char">淘钉智能财税竭诚为您服务！</p>
+                <a href="javascript:;" id="shangwutongzzdb" class="clearfix"><img src="picture/qq_bai.png" alt=""><p>在线咨询</p></a>
+            </div>
+        </div>
+    </div>
+    <!--代办资质为什么要来淘钉智能财税-->
+    <div class="commission wow fadeInUp">
+        <div class="center">
+            <h2>代办资质为什么要来淘钉智能财税</h2>
+            <h5>选择淘钉智能财税，一劳永逸</h5>
+            <div class="item clearfix">
+                <div>
+                    <p class="title">淘钉智能财税</p>
+                    <div class="img"><img src="picture/comm_03.png" alt=""></div>
+                    <p class="cont clearfix"><span>资深专业申报人员，无需企业操心<br/>资质细节了解彻底，审批流畅</span><img src="picture/comm_10.png" alt="" class="imgs"></p>
+                    <p class="cont clearfix"><span>有效时间内高效完成办理，通过率高</span><img src="picture/comm_10.png" alt=""></p>
+                    <p class="cont clearfix"><span>常年积累，有着深厚的资源，稳妥</span><img src="picture/comm_10.png" alt=""></p>
+                    <p class="cont clearfix"><span>材料人员专人筹办，上门服务，省事</span><img src="picture/comm_10.png" alt=""></p>
+                    <p class="cont clearfix"><span>价格透明，无隐藏消费， 全程不加额外费用</span><img src="picture/comm_10.png" alt=""></p>
+                    <p class="cont clearfix"><span>全程监控跟踪，业务进度实时查询跟进</span><img src="picture/comm_10.png" alt=""></p>
+                    <p class="cont clearfix"><span>售后服务跟踪，无后顾之忧</span><img src="picture/comm_10.png" alt=""></p>
+
+                </div>
+                <div>
+                    <p class="title">传统代办</p>
+                    <div class="img"><img src="picture/comm_05.png" alt=""></div>
+                    <p class="cont clearfix"><img src="picture/comm_13.png" alt="" class="imgs"><span>资质申请流程复杂，专业度高<br/>资质标准细节不清楚，审批反复</span></p>
+                    <p class="cont clearfix"><img src="picture/comm_13.png" alt=""><span>办理周期流程长，通过率低</span></p>
+                    <p class="cont clearfix"><img src="picture/comm_13.png" alt=""><span>审批部门环节多，找不到门路</span></p>
+                    <p class="cont clearfix"><img src="picture/comm_13.png" alt=""><span>资料准备要求高而且繁琐，费事</span></p>
+                    <p class="cont clearfix"><img src="picture/comm_13.png" alt=""><span>价格混乱，后期乱收费现象严重，防不胜防</span></p>
+                    <p class="cont clearfix"><img src="picture/comm_13.png" alt=""><span>服务进度不及时通知，出问题得不到解决</span></p>
+                    <p class="cont clearfix"><img src="picture/comm_13.png" alt=""><span>售后服务无保障</span></p>
+                </div>
+                <div class="fig"><img src="picture/fig_03.png" alt=""></div>
+            </div>
+            <!--新加-->
+            <div class="aptitude clearfix">
+                <p class="char">没找到您想办理的资质？</p>
+                <a href="javascript:;" id="shangwutongzzdb" class="clearfix"><img src="picture/qq_lan.png" alt=""><p>在线咨询</p></a>
+            </div>
+        </div>
+    </div>
+
+    <!--代办常见问题-->
+    <div class="issue wow fadeInUp">
+        <div class="center">
+            <h2>代办常见问题</h2>
+            <h5>淘钉帮您解答</h5>
+            <div class="item">
+                <ul>
+                    <li class="clearfix">
+                        <span class="yss">01</span>
+                        <div>
+                            <p class="title">企业营业执照发生变更后，资质证书多长时间内必须变更？</p>
+                            <p class="cont">企业在资质证书有效期内名称、地址、注册资本、法定代表人等发生变更的，应当在工商部门办理变更手续后30日内办理资质证书变更手续，其他日常资质证书变更事项，也需在30日内办理变更手续</p>
+                        </div>
+                    </li>
+
+                    <li class="clearfix">
+                        <span class="ew">02</span>
+                        <div>
+                            <p class="title">怎么办理进出口许可证？</p>
+                            <p class="cont">办理进出口许可证需要的资料有：进口许可证申请表正本；经营者备案登记表或外商投资批准证书复印件；企业法人营业执照副本复印件；出口合同的正本复印件；有效的出口批准文件正本；按规定需提交的其他资料。</p>
+                        </div>
+                    </li>
+
+                    <li class="clearfix">
+                        <span class="yss">03</span>
+                        <div>
+                            <p class="title">需要办理食品经营许可证的类别有？</p>
+                            <p class="cont">食用油、干果、坚果、肉类熟食制品、蛋及蛋类制品、面粉、米面制品、乳制品（奶粉及婴幼儿奶粉）、烘焙食品、豆制品、糖果蜜饯、冷冻饮品、方便食品、罐头、烹调作料、腌制品、酒精饮料、非酒精饮料、茶、咖啡、可可、婴幼儿食品等</p>
+                        </div>
+                    </li>
+
+                    <li class="clearfix">
+                        <span class="yss">04</span>
+                        <div>
+                            <p class="title">办理食品经营许可证都需要哪些材料？</p>
+                            <p class="cont">办理食品经营许可证需要的资料有：《食品经营许可申请书》、营业执照副本原件、复印件、经营场所的使用证明、人员的身份证明、经营设施空间布局和操作流程的文件、食品安全管理制度文本。</p>
+                        </div>
+                    </li>
+
+                    <li class="clearfix">
+                        <span class="ew">05</span>
+                        <div>
+                            <p class="title">办理劳务派遣证都有哪些要求？</p>
+                            <p class="cont">办理劳务派遣许可证的要求：注册资本不得少于人民币200万元；有固定的经营场所和设施；有劳务派遣管理制度；法律、行政法规规定的其他条件。</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <!--新加-->
+            <div class="aptitude clearfix">
+                <p class="char">您还有其他的问题？</p>
+                <a href="javascript:;" id="shangwutongzzdb" class="clearfix"><img src="picture/qq_bai.png" alt=""><p>立即咨询</p></a>
+            </div>
+        </div>
+    </div>
+    <!--广告-->
+   <!-- <div class="guanggao">
+        <div class="center">
+            <a href="javascript:;" id="shangwutongzzdb"><img src="picture/1200x130_3.jpg" alt=""></a>
+        </div>
+    </div>-->
+    <!--客户评价-->
+    <div class="evaluate wow fadeInUp">
+        <div class="center">
+            <h2>客户评价</h2>
+            <h5>客户的信赖是我们前进的动力</h5>
+            <div class="item">
+                <ul class="clearfix">
+                    <li>
+                        <div>
+                            <img src="picture/client_03.png" alt="">
+                            <p><span>我公司与淘钉智能财税已经合作很多年了，每当遇到难题时，他们都会主动地帮我们及时解决。办事效率高，不怕麻烦，特别是他们的员工，专业能力强，而且都非常的吃苦耐劳，坚韧不拔。代理记账、资质代办，我信赖淘钉。</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="picture/client_05.png" alt="">
+                            <p><span>我的食品流通许可证，就是在淘钉智能财税办理的，不存在乱收费情况，全程收费透明，服务态度很好。</span></p>
+                        </div>
+                        <div>
+                            <img src="picture/client_07.png" alt="">
+                            <p><span>淘钉智能财税公司资质代理服务人员专业，服务周到，办事靠谱，一次性发证没有后顾之忧，为我们解决了很多棘手的问题，公司人员的耐心解释让我。</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="picture/client_09.png" alt="">
+                            <p><span>淘钉数年的代办经验，专业的资质办理，为我司解决了不少困难，非常值得信赖！</span></p>
+                        </div>
+                        <div>
+                            <img src="picture/client_11.png" alt="">
+                            <p><span>在淘钉办理的医疗器械经营许可证，不仅服务规范、收费透明，且专业又可靠，选择淘钉我放心。</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="picture/client_17.png" alt="">
+                            <p><span>办理食品经营许可证，我只做了一件事，那就是提交相关资料，淘钉就一站式全程代办，效率很高，值得选择。</span></p>
+                        </div>
+                        <div>
+                            <img src="picture/client_18.png" alt="">
+                            <p><span>淘钉智能财税资深专业的申报人员，在我紧急需要的情况下，淘钉在有效的时间内高效完成办理，通过率还高，真的很棒。</span></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="picture/client_19.png" alt="">
+                            <p><span>在淘钉办理了人力资源许可证，不仅服务态度好，效率还高，最重要的是售后服务跟踪，让企业无后顾之忧，真的是贴心之举。</span></p>
+                        </div>
+                        <div>
+                            <img src="picture/client_20.png" alt="">
+                            <p><span>淘钉智能财税公司资质代理服务人员专业，服务周到，办事靠谱，一次性发证没有后顾之忧，为我们解决了很多棘手的问题，公司人员的耐心解释让我。</span></p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--合作伙伴-->
+<div class="partner wow fadeInUp">
+    <div class="center">
+        <h2>合作伙伴</h2>
+        <h5>强强联手，淘钉智能财税助您创业</h5>
+        <div class="item clearfix">
+            <img src="picture/coom_05.png" alt="阿里云" class="i1"/>
+            <img src="picture/coom_07.png" alt="百度"  class="i1 i2"/>
+            <img src="picture/coom_09.png" alt="京东云"  class="i1 i2"/>
+            <img src="picture/coom_11.png" alt="阿里巴巴"  class="i1 i2"/>
+            <a href="http://www.cetpsp.com" target="_blank"><img src="picture/coom_13.png" alt="云创空间"  class="i1 i2"/></a>
+            <a href="http://www.gongsiba.com" target="_blank"><img src="picture/coom_20.png" alt="公司吧" /></a>
+            <img src="picture/coom_21.png" alt="猪八戒" class="i2"/>
+            <img src="picture/coom_22.png" alt="百度云"  class="i2"/>
+            <img src="picture/coom_23.png" alt="阿里云创客" class="i2"/>
+            <img src="picture/coom_24.png" alt="腾讯开放平台" class="i2"/>
+        </div>
+    </div>
+</div>
+<!--五大特色-->
+<div class="feature">
+    <div class="center clearfix">
+        <div class="div div1">
+            <img src="picture/feat_03.png" alt="" />
+            <div>
+                <h3>顾问团队</h3>
+                <p>资深顾问团队<br>严格监督把控流程</p>
+            </div>
+        </div>
+        <div class="div div2">
+            <img src="picture/feat_05.png" alt="性价比" />
+            <div>
+                <h3>性价比高</h3>
+                <p>价格公开透明 <br>创建业界良好口碑</p>
+            </div>
+        </div>
+        <div class="div div3">
+            <img src="picture/feat_07.png" alt="平台保障" />
+            <div>
+                <h3>平台保障</h3>
+                <p>专业顾问<br>一站式一对一服务</p>
+            </div>
+        </div>
+
+        <div class="div div4">
+            <img src="picture/feat_09.png" alt="高速快捷" />
+            <div>
+                <h3>高速快捷</h3>
+                <p>全天快速响应，流程简单<br>办理进度实时推送</p>
+            </div>
+        </div>
+        <div class="div div5">
+            <img src="picture/feat_11.png" alt="" />
+            <div>
+                <h3>安全保密</h3>
+                <p>客户信息保密防泄露<br>省时省心，让您信赖选择</p>
+            </div>
+        </div>
+    </div>
+</div></div>
+<!--网站尾部-->
+
+<!--网站尾部-->
+<footer>
+    <div class="center">
+        <div class="nav clearfix">
+            <div><a href="zcgs.php">注册公司</a></div>
+            <div class="line"></div>
+            <div><a href="dljz.php">代理记账</a></div>
+            <div class="line"></div>
+            <div><a href="zzdb.php">资质代办</a></div>
+            <div class="line"></div>
+            <div><a href="zscq.php">知识产权</a></div>
+            <div class="line"></div>
+            <div><a href="gsbg.php">公司变更</a></div>
+            <div class="line"></div>
+            <div><a href="zxgs.php">注销公司</a></div>
+        </div>
+        <div class="item">
+            <p>Copyright © 2013-2017 陕西淘丁实业集团有限公司. All rights reserved. 陕ICP备15016384号-8</p>
+            <p>版权所有 抄袭必究 投诉拨打:029-68579161或17795782523</p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- 10月淘钉智能财税活动 -->
+<style>
+    .bottom_anniver {position: fixed;bottom: 0;left: 0;width: 100%;z-index: 999;}
+    .bottom_anniver .sectionBody {position: relative;margin:0 auto;width:1000px;}
+    .bottom_anniver img {width: 100%;height: auto;display: block;margin: 0 auto;}
+    .bottom_anniver .close,.left_anniver .close {position: absolute;top:0;right: 0;cursor: pointer;}
+    .left_anniver {position: fixed;width:260px;height:240px;bottom: 0;left: 0;z-index: 999;display: none;}
+    .left_anniver .aabtn{width:107px;height:25px;line-height:25px;display:block;border-radius:13px;background-color:#fff;text-align:center;color:#E02B30;position:absolute;bottom:12px;left:52px;font-size:13px;font-weight:bold;}
+</style>
+<div class="bottom_anniver">
+    <div class="sectionBody">
+        <div class="close"><img src="picture/anniver_close.png"></div>
+        <a href="http://tb.53kf.com/code/client/10180830/1" target="_blank"><img src="picture/10yuepic.png"></a>
+    </div>
+</div>
+
+<div class="left_anniver">
+    <div class="close"><img src="picture/anniver_close.png"></div>
+    <a href="http://tb.53kf.com/code/client/10180830/1" target="_blank">
+        <img src="picture/10yuepic_l.png">
+    </a>
+</div>
+<script>
+    $('.bottom_anniver .close').click(function () {
+        $('.bottom_anniver').hide();
+        $('.left_anniver').show();
+    })
+    $('.left_anniver .close').click(function () {
+        $('.left_anniver').hide();
+    });
+    var otherp=location.search.slice(1,3);
+    if(otherp=="op"){
+        $(".bottom_anniver").hide();
+    }
+</script>
+<!-- 10月淘钉智能财税活动 end-->
+
+<div class="tanchuang"></div>
+<div id="alert">
+    <a href="javascript:;" class="close">x</a>
+    <!--<img src="picture/logo.png" alt="">-->
+    <p>填写信息,获取查询结果</p>
+    <form>
+        <input type="text" name="uname" id="uname" placeholder="您的称呼" class="phone"  >
+        <input type="text" name="mobile" id="phone" placeholder="您的电话号码" class="phone"  >
+        <input type="button" value="获取结果" class="button" id="getrs">
+    </form>
+</div>
+
+<!--如果需要加回到顶部 直接打开-->
+<!--<div class="back2top" id="back2top">
+    <a href="javascript:void(0);" title="回到顶部"></a>
+</div>-->
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.countup.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/common.js"></script>
+<script>
+    /*实例化wow.js 文件*/
+    if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+     new WOW().init();
+     }
+</script>
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?b86e7d1153b06232ebeea69ff4d16a50";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script  type="text/javascript">var  cnzz_protocol  =  (("https:"  ==  document.location.protocol)  ?  "https://"  :  "http://");document.write(unescape("%3Cspan  id='cnzz_stat_icon_1277836527'%3E%3C/span%3E%3Cscript  src='"  +  cnzz_protocol  +  "s96.cnzz.com/z_stat.php%3Fid%3D1277836527%26show%3Dpic1'  type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript" src="js/20190723.js"></script>
+
+
+
+</body>
+</html>

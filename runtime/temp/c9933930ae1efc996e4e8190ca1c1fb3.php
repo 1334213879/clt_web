@@ -1,4 +1,4 @@
-<?php /*a:2:{s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\index_index.html";i:1573638985;s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\common_head.html";i:1573639500;}*/ ?>
+<?php /*a:2:{s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\index_index.html";i:1573638985;s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\common_head.html";i:1573716186;}*/ ?>
 <html lang="zh_cn">
 <head>
     <meta charset="utf-8">
@@ -125,12 +125,12 @@
             <ul class="clearfix aaa">
                 <li class="all"><a href="javascript:;"><img src="/static/home/picture/menu_03.png" alt="菜单" /><span>快速办理</span></a></li>
                 <li class="er_li"><a href="/">网站首页</a></li>
-                <li><a href="<?php echo url("","",true,false);?>" target="_blank">公司注册</a></li>
-                <li><a href="<?php echo url("","",true,false);?>" target="_blank">代理记账</a></li>
-                <li><a href="<?php echo url("","",true,false);?>" target="_blank">资质代办</a></li>
-                <li><a href="<?php echo url("","",true,false);?>" target="_blank">知识产权</a></li>
-                <li><a href="<?php echo url("","",true,false);?>" target="_blank">公司变更</a></li>
-                <li><a href="<?php echo url("","",true,false);?>" target="_blank">公司注销</a></li>
+                <li><a href="home/Dh/gszc.html" target="_blank">公司注册</a></li>
+                <li><a href="home/Dh/dljz.html" target="_blank">代理记账</a></li>
+                <li><a href="home/Dh/zzdb.html" target="_blank">资质代办</a></li>
+                <li><a href="home/Dh/zscq.html" target="_blank">知识产权</a></li>
+                <li><a href="home/Dh/gsbg.html" target="_blank">公司变更</a></li>
+                <li><a href="home/Dh/zxgs.html" target="_blank">公司注销</a></li>
                 <li class="hot_line"><img src="/static/home/picture/hot_line_03.png" alt="联系电话" /><span>400-029-1105</span></li>
             </ul>
         <div class="navv">

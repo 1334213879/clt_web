@@ -1,4 +1,4 @@
-<?php /*a:3:{s:75:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\article_list.html";i:1573637808;s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\common_head.html";i:1573698305;s:76:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\common_footer.html";i:1573610849;}*/ ?>
+<?php /*a:3:{s:75:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\picture_list.html";i:1573610849;s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\common_head.html";i:1573698305;s:76:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\common_footer.html";i:1573610849;}*/ ?>
 <html lang="zh_cn">
 <head>
     <meta charset="utf-8">
@@ -150,92 +150,28 @@
 
 <div class="layui-container body-container">
     <div class="layui-row layui-col-space15">
-        <div class="layui-col-md8">
-            <div class="fly-panel" style="margin-bottom: 0;">
-                <div class="fly-panel-title fly-filter">
-                    <span class="layui-breadcrumb">
-                        <a href="#">最新动态</a>
-                        <a href="#"><?php echo htmlentities($title); ?></a>
-                    </span>
-                </div>
-                <?php if($lists): ?>
-                <ul class="fly-list">
-                    <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                    <li>
-                        <a href="<?php echo htmlentities($vo['url']); ?>" class="fly-avatar">
-                            <img src="<?php echo htmlentities($vo['thumb']); ?>" alt="<?php echo htmlentities($vo['title']); ?>">
-                        </a>
-                        <h2>
-                            <a href="<?php echo htmlentities($vo['url']); ?>" style="<?php echo htmlentities($vo['title_style']); ?>"><?php echo htmlentities($vo['title']); ?></a>
-                        </h2>
-                        <div class="fly-list-info">
-                            <a href="#" link>
-                                <cite><?php echo htmlentities($vo['username']); ?></cite>
-                            </a>
-                            <span><?php echo htmlentities($vo['time']); ?></span>
-                            <span class="fly-list-nums"><i class="iconfont" title="点击">&#xe60b;</i> <?php echo htmlentities($vo['hits']); ?></span>
-                        </div>
-                        <div class="fly-list-badge">
-                            <?php if(($vo['posid'] == 3)): ?>
-                            <span class="layui-badge layui-bg-black">置顶</span>
-                            <?php elseif(($vo['posid'] == 1 or $vo['posid'] == 2)): ?>
-                            <span class="layui-badge fly-badge-accept">推荐</span>
-                            <?php endif; ?>
-                        </div>
-                    </li>
-                    <?php endforeach; endif; else: echo "" ;endif; ?>
-                </ul>
-                <div style="text-align: center">
-                    <?php echo $page; ?>
-                </div>
-                <?php else: ?>
-                <div class="fly-none">没有相关数据</div>
-                <?php endif; ?>
+        <div class="fly-main" style="overflow: hidden;">
+            <div class="fly-tab-border fly-case-tab layui-hide-xs">
+        <span>
+            <a href="javascript:;" class="options tab-this" data-options="all">全部</a>
+            <?php if(is_array($options) || $options instanceof \think\Collection || $options instanceof \think\Paginator): $i = 0; $__LIST__ = $options;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+                <a href="javascript:;" class="options" data-options="<?php echo htmlentities($v['key']); ?>" title="<?php echo htmlentities($v['val']); ?>"><?php echo htmlentities($v['val']); ?></a>
+            <?php endforeach; endif; else: echo "" ;endif; ?>
+        </span>
             </div>
-        </div>
-        <div class="layui-col-md4">
-            <dl class="fly-panel fly-list-one">
-                <dt class="fly-panel-title">推荐文章</dt>
-                <?php $result = db("article")->alias("a")->join("category c"," a.catid = c.id","left")
-            ->where("posid = 1 or posid=2 and (status = 1 or (status = 0 and createtime <1573699649))")
-            ->field("a.*,c.catdir,c.catname")
-            ->limit(8)
-            ->order(" a.sort asc,a.createtime desc,a.id desc")
-            ->select();if($result){foreach ($result as $k=>$vo):$result[$k]["time"]= toDate($vo["createtime"],"Y-m-d");$result[$k]["thumb"]= $vo["thumb"]?$vo["thumb"]:"";?><?php endforeach; foreach ($result as $k=>$vo):?>
-                <dd>
-                    <a href="<?php echo url('home/'.$vo['catdir'].'/info',array('id'=>$vo['id'],'catId'=>$vo['catid'])); ?>" title="<?php echo htmlentities($vo['title']); ?>"><?php echo htmlentities($vo['title']); ?></a>
-                    <span class="pull-right"><i class="iconfont" title="点击">&#xe60b;</i> <?php echo htmlentities($vo['hits']); ?></span>
-                </dd>
-                <?php endforeach; }else{echo "<div class='fly-none'>没有相关数据</div>";}?>
-                <!-- 无数据时 -->
-                <!--
-                <div class="fly-none">没有相关数据</div>
-                -->
-            </dl>
-
-            <div class="fly-panel">
-                <div class="fly-panel-title">
-                    这里可作为广告区域
-                </div>
-                <div class="fly-panel-main">
-                    <?php $result = db("ad")->where("as_id = 5 and open=1")->limit(3)->order("")->select();foreach ($result as $k=>$list):$result[$k]["time"]= isset($list["createtime"])?toDate($list["createtime"]):""?>
-                    <a href="<?php echo htmlentities($list['url']); ?>" target="_blank" class="fly-zanzhu" style="background-color: #5FB878;"><?php echo htmlentities($list['title']); ?></a>
-                    <?php endforeach?>
-                </div>
-            </div>
-
-            <div class="fly-panel fly-link">
-                <h3 class="fly-panel-title">友情链接</h3>
-                <dl class="fly-panel-main">
-                    <?php $result = db("link")->where("open=1")->limit(5)->order("")->select();foreach ($result as $k=>$list):$result[$k]["time"]= isset($list["createtime"])?toDate($list["createtime"]):""?>
-                    <dd><a href="<?php echo htmlentities($list['url']); ?>" target="_blank"><?php echo htmlentities($list['title']); ?></a><dd>
-                    <?php endforeach?>
-                </dl>
-            </div>
-
+            <ul class="fly-case-list" >
+                <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                <li class="fly-case-list-li photos" data-id="<?php echo htmlentities($vo['group']); ?>" >
+                    <div class="fly-case-img" >
+                        <img src="<?php echo htmlentities($vo['pic']); ?>" alt="<?php echo htmlentities($vo['title']); ?>">
+                    </div>
+                    <h2><a href="javascript:;"><?php echo htmlentities($vo['title']); ?></a></h2>
+                    <?php echo $vo['content']; ?>
+                </li>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+            </ul>
         </div>
     </div>
-
 </div>
 
 <div class="fly-footer">
@@ -267,7 +203,30 @@
         ,base: '/static/home/mods/' //这里实际使用时，建议改成绝对路径
     }).extend({
         fly: 'index'
-    }).use('fly');
+    }).use('fly',function(){
+        var $ = layui.$;
+        layer.photos({
+            photos: '.photos'
+            ,zIndex: 9999999999
+            ,anim: -1
+        });
+        $('.options').click(function () {
+            $(this).addClass('tab-this');
+            $(this).siblings().removeClass('tab-this');
+            var options = $(this).attr('data-options');
+            if(options=='all'){
+                $('.fly-case-list-li').fadeIn();
+            }else{
+                $('.fly-case-list-li').each(function(k,v){
+                    if($(this).attr('data-id')!=options){
+                        $(this).fadeOut();
+                    }else{
+                        $(this).fadeIn();
+                    }
+                });
+            }
+        })
+    });
 </script>
 </body>
 </html>
