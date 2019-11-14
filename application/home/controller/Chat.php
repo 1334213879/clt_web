@@ -10,7 +10,7 @@ class Chat extends Common{
 
     	$user = session('user');
 
-    	$_SESSON['id']=$user['id'];
+    	// $_SESSON['id']=$user['id'];
     	
         $this->assign('user',$user);
         return $this->fetch();

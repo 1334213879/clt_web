@@ -67,6 +67,10 @@ class Index extends Common{
             cache('adList', $adList, 3600);
         }
         $this->assign('adList', $adList);
+         $na = Db::table('navigation')->select();
+         $carousel = Db::table('carousel')->where('status',1)->select();
+         $this->assign('na', $na);
+         $this->assign('carousel', $carousel);
         return $this->fetch();
     }
     public function download($id=''){

@@ -58,3 +58,1014 @@
 [ sql ] [ SQL ] SELECT * FROM `link` WHERE  `open` = 1 ORDER BY `sort` ASC [ RunTime:0.000977s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.001953s ]
 [ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[2019-11-13T10:23:16+08:00] 127.0.0.1 GET lc.com/chat/index
+[运行时间：0.088867s] [吞吐率：11.25req/s] [内存消耗：3,217.04kb] [文件加载：76]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'chat/<id>',
+  'route' => 'home/chat/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\home\view\chat_index.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `users` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `u`.*,ul.level_name as level FROM `users` `u` LEFT JOIN `user_level` `ul` ON `u`.`level`=`ul`.`level_id` WHERE  `u`.`id` = '2' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `pid` = 0  AND `ismenu` = 1 ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `ismenu` = 1 ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `link` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `link` WHERE  `open` = 1 ORDER BY `sort` ASC [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[2019-11-13T10:24:00+08:00] 127.0.0.1 GET lc.com/chat/index
+[运行时间：0.075195s] [吞吐率：13.30req/s] [内存消耗：3,200.31kb] [文件加载：75]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'chat/<id>',
+  'route' => 'home/chat/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\home\view\chat_index.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `users` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `u`.*,ul.level_name as level FROM `users` `u` LEFT JOIN `user_level` `ul` ON `u`.`level`=`ul`.`level_id` WHERE  `u`.`id` = '2' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[2019-11-13T10:26:33+08:00] 127.0.0.1 GET lc.com/chat/index
+[运行时间：0.082032s] [吞吐率：12.19req/s] [内存消耗：3,200.31kb] [文件加载：75]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'chat/<id>',
+  'route' => 'home/chat/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\home\view\chat_index.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `users` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `u`.*,ul.level_name as level FROM `users` `u` LEFT JOIN `user_level` `ul` ON `u`.`level`=`ul`.`level_id` WHERE  `u`.`id` = '2' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[2019-11-13T10:37:49+08:00] 127.0.0.1 GET lc.com/chat/index
+[运行时间：0.074219s] [吞吐率：13.47req/s] [内存消耗：3,200.31kb] [文件加载：75]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'chat/<id>',
+  'route' => 'home/chat/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+    'id' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 'index',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\home\view\chat_index.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'user',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `users` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT `u`.*,ul.level_name as level FROM `users` `u` LEFT JOIN `user_level` `ul` ON `u`.`level`=`ul`.`level_id` WHERE  `u`.`id` = '2' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-11-13T10:37:52+08:00] 127.0.0.1 GET lc.com/
+[运行时间：0.097656s] [吞吐率：10.24req/s] [内存消耗：3,951.53kb] [文件加载：80]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\home\view\index_index.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'list',
+  14 => 'style',
+  15 => 'js',
+  16 => 'demo_time',
+  17 => 'adList',
+  18 => 'na',
+  19 => 'carousel',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `users` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `u`.*,ul.level_name as level FROM `users` `u` LEFT JOIN `user_level` `ul` ON `u`.`level`=`ul`.`level_id` WHERE  `u`.`id` = '2' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir`,`c`.`catname` FROM `article` `a` LEFT JOIN `category` `c` ON `a`.`catid`=`c`.`id` ORDER BY `createtime` DESC LIMIT 15 [ RunTime:0.001953s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `feast` [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '10-17'  AND `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '11-13'  AND `type` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ad` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `ad` WHERE  `open` = 1  AND `as_id` = 1 ORDER BY `sort` ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `navigation` [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `navigation` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  `status` = 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[2019-11-13T11:12:16+08:00] 127.0.0.1 GET lc.com/
+[运行时间：0.102539s] [吞吐率：9.75req/s] [内存消耗：3,741.13kb] [文件加载：77]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\home\view\index_index.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'list',
+  14 => 'style',
+  15 => 'js',
+  16 => 'demo_time',
+  17 => 'adList',
+  18 => 'na',
+  19 => 'carousel',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir`,`c`.`catname` FROM `article` `a` LEFT JOIN `category` `c` ON `a`.`catid`=`c`.`id` ORDER BY `createtime` DESC LIMIT 15 [ RunTime:0.001953s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `feast` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '10-17'  AND `type` = 2 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '11-13'  AND `type` = 1 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `navigation` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `navigation` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  `status` = 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[2019-11-13T11:23:33+08:00] 127.0.0.1 GET lc.com/
+[运行时间：0.092773s] [吞吐率：10.78req/s] [内存消耗：3,757.77kb] [文件加载：78]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\home\view\index_index.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'list',
+  14 => 'style',
+  15 => 'js',
+  16 => 'demo_time',
+  17 => 'adList',
+  18 => 'na',
+  19 => 'carousel',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001954s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `pid` = 0  AND `ismenu` = 1 ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `ismenu` = 1 ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `link` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `link` WHERE  `open` = 1 ORDER BY `sort` ASC [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir`,`c`.`catname` FROM `article` `a` LEFT JOIN `category` `c` ON `a`.`catid`=`c`.`id` ORDER BY `createtime` DESC LIMIT 15 [ RunTime:0.000976s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `feast` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '10-17'  AND `type` = 2 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '11-13'  AND `type` = 1 LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `navigation` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `navigation` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  `status` = 1 [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[2019-11-13T11:25:04+08:00] 127.0.0.1 GET lc.com/admin
+[运行时间：0.050781s] [吞吐率：19.69req/s] [内存消耗：2,237.50kb] [文件加载：69]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-11-13T11:25:04+08:00] 127.0.0.1 GET lc.com/admin/login/index.html
+[运行时间：0.118164s] [吞吐率：8.46req/s] [内存消耗：4,411.69kb] [文件加载：79]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\admin\view\login\index.html [ array (
+  0 => 'system',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `module` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `module` ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `category` ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `posid` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `posid` ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.001953s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.001953s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `system` [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SELECT * FROM `system` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[2019-11-13T11:25:18+08:00] 127.0.0.1 POST lc.com/admin/login/index.html
+[运行时间：0.052735s] [吞吐率：18.96req/s] [内存消耗：2,522.96kb] [文件加载：79]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lc.com/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://lc.com',
+  'accept' => '*/*',
+  'content-length' => '32',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin123',
+)
+[ error ] [8]未定义数组索引: vercode[D:\www\cltphp\application\admin\model\Admin.php:10]
+---------------------------------------------------------------
+[2019-11-13T11:25:23+08:00] 127.0.0.1 POST lc.com/admin/login/index.html
+[运行时间：0.051757s] [吞吐率：19.32req/s] [内存消耗：2,522.96kb] [文件加载：79]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lc.com/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://lc.com',
+  'accept' => '*/*',
+  'content-length' => '32',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin123',
+)
+[ error ] [8]未定义数组索引: vercode[D:\www\cltphp\application\admin\model\Admin.php:10]
+---------------------------------------------------------------
+[2019-11-13T11:25:26+08:00] 127.0.0.1 GET lc.com/admin/login/index.html
+[运行时间：0.044922s] [吞吐率：22.26req/s] [内存消耗：2,215.00kb] [文件加载：70]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] D:\www\cltphp\application\admin\view\login\index.html [ array (
+  0 => 'system',
+) ]
+---------------------------------------------------------------
+[2019-11-13T11:25:26+08:00] 127.0.0.1 GET lc.com/admin/login/verify.html
+[运行时间：0.046875s] [吞吐率：21.33req/s] [内存消耗：2,137.70kb] [文件加载：67]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lc.com/admin/login/index.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-11-13T11:25:31+08:00] 127.0.0.1 POST lc.com/admin/login/index.html
+[运行时间：0.063477s] [吞吐率：15.75req/s] [内存消耗：3,435.58kb] [文件加载：81]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lc.com/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://lc.com',
+  'accept' => '*/*',
+  'content-length' => '45',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => 'admin123',
+  'vercode' => 'abuw',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[2019-11-13T11:25:32+08:00] 127.0.0.1 GET lc.com/admin/index/index.html
+[运行时间：0.094727s] [吞吐率：10.56req/s] [内存消耗：4,129.95kb] [文件加载：81]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lc.com/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\admin\view\index\index.html [ array (
+  0 => 'menus',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.001953s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `c`.*,m.title as mtitle,m.name as mname FROM `category` `c` INNER JOIN `module` `m` ON `c`.`moduleid`=`m`.`id` ORDER BY `c`.`sort` [ RunTime:0.001953s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  ( menustatus=1 ) ORDER BY `sort` [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[2019-11-13T11:25:32+08:00] 127.0.0.1 GET lc.com/uploads/20180625/f266169c2956429d9aaea6cf6f1e51cb.jpg
+[运行时间：0.033203s] [吞吐率：30.12req/s] [内存消耗：1,660.75kb] [文件加载：53]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2019-11-13T11:25:33+08:00] 127.0.0.1 GET lc.com/admin/index/main.html
+[运行时间：0.089844s] [吞吐率：11.13req/s] [内存消耗：3,823.70kb] [文件加载：79]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lc.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\admin\view\index\main.html [ array (
+  0 => 'config',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT VERSION() AS ver [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-11-13T11:25:39+08:00] 127.0.0.1 GET lc.com/admin/navigation/carousel.html
+[运行时间：0.085937s] [吞吐率：11.64req/s] [内存消耗：3,896.60kb] [文件加载：82]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lc.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\admin\view\navigation\carousel.html [ array (
+  0 => 'carousel',
+  1 => 'title',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001954s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-11-13T11:25:39+08:00] 127.0.0.1 GET lc.com/uploads/20191112/a3668d36754cc03bb4f0a9c65cdf9710.png
+[运行时间：0.031250s] [吞吐率：32.00req/s] [内存消耗：1,660.75kb] [文件加载：53]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2019-11-13T11:25:42+08:00] 127.0.0.1 GET lc.com/admin/navigation/index.html
+[运行时间：0.092773s] [吞吐率：10.78req/s] [内存消耗：3,893.86kb] [文件加载：81]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lc.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\admin\view\navigation\index.html [ array (
+  0 => 'na',
+  1 => 'title',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.001953s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.001953s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `navigation` [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `navigation` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2019-11-13T11:26:25+08:00] 127.0.0.1 GET lc.com/admin/index/index.html
+[运行时间：0.082031s] [吞吐率：12.19req/s] [内存消耗：3,741.37kb] [文件加载：78]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\admin\view\index\index.html [ array (
+  0 => 'menus',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000977s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[2019-11-13T11:26:25+08:00] 127.0.0.1 GET lc.com/uploads/20180625/f266169c2956429d9aaea6cf6f1e51cb.jpg
+[运行时间：0.034180s] [吞吐率：29.26req/s] [内存消耗：1,660.75kb] [文件加载：53]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2019-11-13T11:26:26+08:00] 127.0.0.1 GET lc.com/admin/index/main.html
+[运行时间：0.080078s] [吞吐率：12.49req/s] [内存消耗：3,671.41kb] [文件加载：76]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ LANG ] D:\www\cltphp\application\admin\\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'skin=0; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://lc.com/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\admin\view\index\main.html [ array (
+  0 => 'config',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=1 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=2 ) ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=3 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=4 ) ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=5 ) ORDER BY `sort` [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  ( moduleid=6 ) ORDER BY `sort` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT VERSION() AS ver [ RunTime:0.000977s ]
+---------------------------------------------------------------
+[2019-11-13T11:26:29+08:00] 127.0.0.1 GET lc.com/
+[运行时间：0.089844s] [吞吐率：11.13req/s] [内存消耗：3,782.45kb] [文件加载：80]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573541489; PHPSESSID=2fbj1ubi6nl2uj197euniuqodh',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.75 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'lc.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\www\cltphp\application\home\view\index_index.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'list',
+  14 => 'style',
+  15 => 'js',
+  16 => 'demo_time',
+  17 => 'adList',
+  18 => 'na',
+  19 => 'carousel',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001953s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir`,`c`.`catname` FROM `article` `a` LEFT JOIN `category` `c` ON `a`.`catid`=`c`.`id` ORDER BY `createtime` DESC LIMIT 15 [ RunTime:0.001953s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `feast` [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '10-17'  AND `type` = 2 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '11-13'  AND `type` = 1 LIMIT 1 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `navigation` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `navigation` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  `status` = 1 [ RunTime:0.000976s ]
+[ error ] [8]未定义数组索引: keyword[D:\www\cltphp\runtime\temp\36e2fb87d0047086f1acc89f0eb760cc.php:7]
+[ error ] [8]未定义数组索引: info[D:\www\cltphp\runtime\temp\36e2fb87d0047086f1acc89f0eb760cc.php:8]
+[ error ] [8]未定义数组索引: number[D:\www\cltphp\runtime\temp\36e2fb87d0047086f1acc89f0eb760cc.php:294]
+---------------------------------------------------------------
+[2019-11-13T11:26:30+08:00] 127.0.0.1 GET lc.com/uploads/20190305/0f33002431b9c35ad0c8f6be8834c064.png
+[运行时间：0.032226s] [吞吐率：31.03req/s] [内存消耗：1,660.75kb] [文件加载：53]
+[ info ] [ LANG ] D:\www\cltphp\thinkphp\lang\zh-cn.php
