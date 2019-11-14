@@ -1,4 +1,4 @@
-<?php /*a:2:{s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\index_index.html";i:1573638985;s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\common_head.html";i:1573716186;}*/ ?>
+<?php /*a:2:{s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\index_index.html";i:1573638985;s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\common_head.html";i:1573724859;}*/ ?>
 <html lang="zh_cn">
 <head>
     <meta charset="utf-8">
