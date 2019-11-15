@@ -120,3 +120,19 @@ html{
 	background: gray;
 	padding: 10px 20px;
 }
+.suc{
+	color:red;
+	text-align:center;
+	padding: 10px 0px;
+}
+.chat_mesdiv{
+	display: block;
+	margin: 10px 0px;
+}
+.chat_mes{
+	width: auto;
+	padding: 10px 25px;
+	border-radius: 15px;
+	background: #E0E0E0;
+	line-height: 2;
+}

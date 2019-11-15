@@ -12,16 +12,17 @@ $(function() {
              
              /* 绑定事件 */
              socket.onopen = function() {
-                 $("#msg").html("连接成功...");
+                 $("#msg").html("<p class=suc>连接成功...</p>");
              };
              
             socket.onmessage = function(e) {
                 // console.log(e)
-                 $("#msg").html($("#msg").html() + "<br />" + e.data);
+                 $("#msg").html();
+				 //$("#msg").html() + "<br />" + e.data
              };
              
              socket.onclose = function() {
-                 $("#msg").html($("#msg").html() + "<br />关闭连接...");
+                 $("#msg").html($("#msg").html() + "<br /><p class=suc>关闭连接...</p>");
              };
         } catch(exception) {
             $("#msg").html($("#msg").html() + "<br />有错误发生");
@@ -38,7 +39,7 @@ $(function() {
    
         try {
             socket.send($("#data").val());
-            $("#msg").html($("#msg").html() + "<br />发送数据：" + $("#data").val());
+            $("#msg").html($("#msg").html() + "<br /><div class=chat_mesdiv><span class=chat_mes>用户：" + $("#data").val() + "</span></div>");
         } catch (exception) {
             $("#msg").html($("#msg").html() + "<br />发送数据出错");
         }
@@ -71,9 +72,9 @@ $(function() {
     </div>
     <div class="chat_main">
 		<div class="chat_con">
-		    <p id="msg">
+		    <div id="msg">
 				
-		    </p>
+		    </div>
 		</div>
 		<div class="chat_about">
 			<ul>
