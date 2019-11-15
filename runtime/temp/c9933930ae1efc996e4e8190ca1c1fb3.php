@@ -1,4 +1,4 @@
-<?php /*a:2:{s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\index_index.html";i:1573638985;s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\common_head.html";i:1573724859;}*/ ?>
+<?php /*a:2:{s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\index_index.html";i:1573778876;s:74:"D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\common_head.html";i:1573781001;}*/ ?>
 <html lang="zh_cn">
 <head>
     <meta charset="utf-8">
@@ -107,15 +107,15 @@
             <div class="top-right">
                 <ul class="clearfix" id="types">
                     <li><a href="chat/1" class="moren" id="service">找服务</a></li>
-                    <li><a href="http://tb.53kf.com/code/client/10180830/" id="zdz">找代账</a></li>
-                    <li><a href="http://tb.53kf.com/code/client/10180830/" id="cgs">查公司</a></li>
-                    <li><a href="http://tb.53kf.com/code/client/10180830/" id="csb">查商标</a></li>
+                    <li><a href="chat/1" id="zdz">找代账</a></li>
+                    <li><a href="chat/1" id="cgs">查公司</a></li>
+                    <li><a href="chat/1" id="csb">查商标</a></li>
                 </ul>
                 <div class="form">
                     <input type="text" name="" id="search" placeholder="请输入您要查找的服务"/><button  id="sousu"><img src="/static/home/picture/top2.png" alt="箭头"/>搜索</button>
                 </div>
                 <div class="bot_nav">
-                    <a href="http://tb.53kf.com/code/client/10180830/">公司注册</a><a href="http://tb.53kf.com/code/client/10180830/">商标注册</a><a href="http://tb.53kf.com/code/client/10180830/">资质代办</a><a href="http://tb.53kf.com/code/client/10180830/">代理记账</a>
+                    <a href="chat/1">公司注册</a><a href="chat/1">商标注册</a><a href="chat/1">资质代办</a><a href="chat/1">代理记账</a>
                 </div>
             </div>
         </div>

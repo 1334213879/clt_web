@@ -1,0 +1,122 @@
+body,div,dl,dt,dd,ul,li,ol,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin: 0; padding: 0;}
+fieldset,img{border: 0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style: normal;font-weight: normal;}
+ol,ul,li{list-style-type: none;}
+a{text-decoration: none;}
+caption,th{text-align: left;}
+h1,h2,h3,h4,h5,h6{font-size: 100%;font-weight: normal;}
+q:before,q:after{content: ;}
+a,p,span,strong,small,i,div{font-size: 14px;}
+input,textarea,button{outline: none; background: none; border: none; resize: none;}
+textarea{height: 19px;}
+input:focus{outline: none;}
+abbr,acronym{border: 0;}
+body{color: #666; background-color: #fff;font-size: 0;}
+html{
+	font-size: 14px;
+}
+.al-module{width: 170px; height: 130px;}
+.clearfix:after{visibility: hidden; display: block; font-size: 0; content: ; clear: both; height: 0;}
+.clearfix{zoom: 1;}
+.chat_head{
+	width: 100%;
+	background: #0174DF;
+	padding: 20px 0px;
+}
+.chat_logo{
+	width: 80px;
+	margin: 0px 10px 0px 20px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.chat_tit{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 5px;
+	line-height: 2;
+}
+.chat_tit P{
+	font-size: 15px;
+	color: white;
+}
+.chat_main{
+	font-size: 0;
+}
+.chat_con{
+	width: 85%;
+	height: 70%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.chat_con::before{
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	content: "";
+	background: #E0E0E0;
+	bottom: 0;
+	left: 0;
+}
+.chat_about{
+	width: 15%;
+	height: 70%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.chat_about::before{
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	content: "";
+	background: #E0E0E0;
+	left: 0;
+	top: 0;
+}
+.chat_about::after{
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	content: "";
+	background: #E0E0E0;
+	left: 0;
+	bottom: 0;
+}
+.chat_bot{
+	width: 85%;
+	height: 20%;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+.chat_bot::before{
+	position: absolute;
+	width: 1px;
+	height: 100%;
+	background: #E0E0E0;
+	content: "";
+	right: 0;
+	top: 0;
+}
+.chat_keyin{
+	display: block;
+	width: auto;
+	height: 80px;
+	padding: 10px;
+	border-bottom: 1px solid #E0E0E0;
+}
+.chat_keyin #data{
+	width: 100%;
+	height: 100%;
+}
+#send{
+	color: white;
+	background: #0174DF;
+	padding: 10px 20px;
+}
+#off{
+	color: white;
+	background: gray;
+	padding: 10px 20px;
+}
