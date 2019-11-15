@@ -1,0 +1,180 @@
+﻿/*网站主体*/
+/*banner*/
+div.main div.banner{background: url("../images/banner_02.jpg") no-repeat center center;width: 100%; height: 520px; overflow: hidden;}
+div.main div.banner div.center p.second{font-size: 28px;color:#fff;text-align: center; line-height: 28px;margin-top:195px;}
+
+div.main div.banner div.center div.item div.kuang{width: 515px;height: 50px;background: #fff; float: left; }
+div.banner div.center div.item div.kuang div.select{width: 70px;height: 50px; float: left; background: #fff; color: #333; border:none; font-size: 18px;line-height: 50px;cursor: pointer;}
+div.banner div.center div.item div.kuang select{width: 62px;  padding: 14px 0 14px 8px;  border: none;  font-size: 18px;  color: #333;  outline: none;  appearance: none;  -moz-appearance: none;  -webkit-appearance: none;background: url("../images/arrow.png") no-repeat scroll right center transparent; padding-right:10px; line-height: 18px; }
+div.banner div.center div.item div.kuang select::-ms-expand { display: none;  }
+div.banner div.center div.item div.kuang div.select span{display: block;float: left;margin-left:15px;}
+div.banner div.center div.item div.kuang div.select img{display: block;float: right; margin-top: 23px;    margin-right: 5px;}
+div.banner div.center div.item div.kuang input{width: 435px;padding: 17px 0 12px 5px; border: none; float: left; font-size: 16px;}
+div.banner div.center div.item form{width: 730px; margin:0 auto;}
+div.banner div.center div.item form a{cursor: pointer; display: block; width: 200px; height: 50px; color:#fff; text-align: center;line-height: 50px; margin-left: 14px; background: #3088ff; border:none;font-size: 20px; float: left;}
+div.banner div.center div.item{width: 800px;height: 106px; margin: 30px auto 0; padding-top: 30px; position: relative;}
+div.banner div.center div.item p{font-size: 16px; width: 730px; margin:0 auto;padding-top: 5px;}
+div.banner div.center div.item p span{color: #3088ff; font-weight: bold;}
+div.banner div.center div.item div.optgroup{width: 70px; background: #fff;
+    font-size: 18px;position: absolute; top:80px;left: 35px; display: none;}
+div.banner div.center div.item div.optgroup p{line-height: 24px;/*padding-left:10px; */ text-align:center;font-size: 18px; color:#333;    width: 70px;}
+div.banner div.center div.item div.optgroup p:hover{background: #3088ff;width: 70px; cursor: pointer;color:#fff;}
+
+/*我们的服务*/
+div.main div.service{padding-bottom: 80px;}
+div.main div.service div.center div.item ul li{width: 350px; height: 210px;box-shadow: 4px 0px 10px 3px #dfdfdf;; float: left;
+    border-bottom-right-radius: 30px;border-top-left-radius: 30px;}
+div.main div.service div.center div.item ul li+li{   margin-left: 66px;}
+div.main div.service div.center div.item ul li.li_er{width: 367px;}
+div.main div.service div.center div.item ul li div{}
+div.main div.service div.center div.item ul li div img{display: block;float: left; margin:38px 15px 10px 25px;}
+div.main div.service div.center div.item ul li div p{float: left; margin-top:45px;}
+div.main div.service div.center div.item ul li div p span.title{font-size: 30px; font-weight: bold; margin-bottom:10px; color:#333;}
+div.main div.service div.center div.item ul li div p span.cont{font-size: 20px;}
+div.main div.service div.center div.item ul li p.line{width: 290px;height: 1px;background: #dfdfdf; margin:0 auto;}
+div.main div.service div.center div.item ul li div p span{display: block;}
+div.main div.service div.center div.item ul li a{font-size: 18px; color:#3088ff; display: block; margin:10px 0 0 235px;}
+div.main div.service div.center div.item ul li a:hover{text-decoration: underline;}
+
+/*一次选择-享5大超值服务*/
+div.main div.acme{background: url("../images/acme_02.jpg") no-repeat center center; width: 100%;height: 558px;}
+div.main div.acme div.item ul li{width: 160px; text-align: center; float: left;}
+div.main div.acme div.item ul li+li{margin-left:100px;}
+div.main div.acme div.item ul li p{font-size: 20px;color: #333;line-height: 20px; margin-top:15px;}
+
+/*服务优势*/
+div.main div.advantage{padding-bottom: 80px;}
+div.main div.advantage div.center div.item div.title{position: relative; overflow: hidden;}
+div.main div.advantage div.center div.item div.title h4:nth-of-type(1){font-size:35px;color:#333;font-weight: 100;position: absolute;top:23px;left:184px;}
+div.main div.advantage div.center div.item div.title h4:nth-of-type(2){font-size:35px;color:#666;font-weight: 100;position: absolute;top:23px;right:186px;}
+div.main div.advantage div.center div.item div.title div.title_kuang{margin-top:23px;width: 100%; height: 80px; border-top-right-radius: 10px;border-top-left-radius: 10px;}
+div.main div.advantage div.center div.item div.title div.title_kuang span{display: block; width:600px;float: left; font-size: 30px;color:#fff;font-weight: bold;text-align: center;line-height: 30px;margin-top:25px;}
+div.main div.advantage div.center div.item div.title span.center{position:absolute;top:3px;left:553px; display: block;border:5px solid #ff8b7b; border-radius:50%;line-height: 74px;width: 79px;height: 79px; text-align: center;font-size: 52px;color:#ff8b7b;}
+div.main div.advantage div.center div.item div.cont{
+    position: relative;
+}
+div.main div.advantage div.center div.item div.cont ul{ width: 598px; float: left; border-right: 3px solid #9badc6; height: 330px;}
+div.main div.advantage div.center div.item div.cont ul:nth-of-type(1) li{margin-left:40px;width: 430px;padding-bottom: 10px;text-align: right;position: relative;color:#333333;font-size:16px;}
+div.main div.advantage div.center div.item div.cont ol{position:absolute;top:41px;left:543px;}
+div.main div.advantage div.center div.item div.cont ol li{width:121px;height:43px;text-align: center;line-height:43px;background: #2f88fe;color:#fff;border-radius: 4px;margin-bottom:17px;font-size:16px;}
+div.main div.advantage div.center div.item div.cont ul:nth-of-type(1) li span{background: url("../images/sure.jpg")no-repeat;width:42px;height:42px;display: block;position: absolute;top:-13px;right:-54px;}
+div.main div.advantage div.center div.item div.cont ul:nth-of-type(2) li{margin-left:135px;width: 456px;padding-bottom: 10px;text-align: left;position: relative;font-size:16px;color:#666;}
+div.main div.advantage div.center div.item div.cont ul:nth-of-type(2) li span{background: url("../images/error.png")no-repeat;width:42px;height:42px;display: block;position: absolute;top:-13px;left:-54px;}
+
+div.main div.advantage div.center div.item div.cont ul li+li{margin-top: 30px;}
+div.main div.advantage div.center div.item div.cont ul li:first-child{margin-top:50px;}
+div.main div.advantage div.center div.item div.cont ul+ul li{margin-left:53px; }
+div.main div.advantage div.center div.item div.cont ul+ul{border-right: none;}
+div.main div.advantage div.center div.item div.cont ul li{font-size: 20px;}
+div.main div.advantage div.center div.item div.cont{position: relative;}
+div.main div.advantage div.center div.item div.cont img{position: absolute; top: 30px; left: 583px;}
+
+/*免费专业分析服务*/
+div.main div.major{background:#3088ff; padding-bottom: 80px;}
+div.main div.major h2{color:#fff;}
+div.main div.major h5{color: #fff;}
+div.main div.major div.center div.item ul li{background: url("../images/frame_03.png") no-repeat center center;  width: 283px;height: 110px; float: left;}
+div.main div.major div.center div.item ul li+li{margin-left:22px;}
+div.main div.major div.center div.item ul li img{display: block; float: left; margin-top:30px; margin-left:10px;}
+div.main div.major div.center div.item ul li div{float: right; color: #fff; font-size: 30px; margin-right:10px; margin-top:20px;}
+div.main div.major div.center div.item ul li div span{display: block; font-size: 20px;    margin-top: 5px;}
+div.main div.major div.center div.promptly a{background: #fec514;}
+
+/*及时申报服务*/
+div.main div.declare{padding-bottom: 80px;}
+div.main div.declare div.center div.item ul li{margin-left:126px;background: url("../images/dec_03.png") no-repeat center center;width: 248px;height: 272px; float: left;}
+div.main div.declare div.center div.item ul li+li{margin-left: 100px;}
+div.main div.declare div.center div.item ul li p.title{font-size: 30px;font-weight: bold;color:#333; text-align: center; margin:30px 0 20px;}
+div.main div.declare div.center div.item ul li p.cont{font-size: 20px;width: 180px;margin:0 auto 20px;}
+div.main div.declare div.center div.item ul li a{display: block; font-size: 20px;color: #fff; background: #3088ff;width: 180px;height: 40px; margin:0 auto; text-align: center;line-height: 40px; opacity: 0.9;}
+div.main div.declare div.center div.item ul li a:hover{opacity: 1;}
+
+/*办理状态随时通知*/
+div.main div.inform{padding-bottom: 80px; background: #f5f5f5;}
+div.main div.inform div.center div.item{background: url("../images/inform_03.png") no-repeat center center; width: 100%; height:380px;}
+div.main div.inform div.center div.item div.title{font-size: 30px;font-weight: bold;color:#fff;width: 380px; text-align: center;float: left; margin-top: 150px;}
+div.main div.inform div.center div.item ul{width: 820px;float: left;}
+div.main div.inform div.center div.item ul li{font-size: 30px;font-weight: bold;color:#333;margin-top:36px;}
+div.main div.inform div.center div.item ul li.erji{font-size: 20px;font-weight: normal; color:#333; margin-top:5px;}
+div.main div.inform div.center div.item ul li+li+li{margin-left:50px; margin-top:55px;}
+div.main div.inform div.center div.item ul li+li+li+li+li{margin-left: 5px; }
+
+/*发票快递正规服务*/
+div.main div.invoice{padding-bottom: 80px;}
+div.main div.invoice div.center div.item ul li.pinkage{background: url("../images/icon_10.png") no-repeat center center; margin-top: 60px;margin-left:10px; width:220px ;height: 120px;font-size: 40px;font-weight: bold;color:#fff;}
+div.main div.invoice div.center div.item ul li.pinkage p{width: 150px; height: 100px;text-align: center; line-height: 100px;}
+div.main div.invoice div.center div.item ul li.operation{font-size: 80px ;font-weight: bold;color:#cfcfcf;}
+div.main div.invoice div.center div.item ul li{float: left;}
+div.main div.invoice div.center div.item ul li p{font-size: 20px; margin-top:20px;}
+div.main div.invoice div.center div.item ul li+li{ margin-top: 70px;}
+div.main div.invoice div.center div.item ul li.equal{margin:70px 35px 0; }
+div.main div.invoice div.center div.item ul li.plus{margin:70px 52px 0; }
+div.main div.invoice div.center div.item ul li.char{width: 120px;text-align: center;}
+
+/*免费终身享受售后服务*/
+div.main div.after_sale{padding-bottom: 80px; background: #3088ff;}
+div.main div.after_sale h2{color: #fff;}
+div.main div.after_sale h5{color: #fff;}
+div.main div.after_sale div.item div{float: left;}
+div.main div.after_sale div.item div p{color:#fff;}
+div.main div.after_sale div.item div p.title{font-size: 30px; font-weight: bold;}
+div.main div.after_sale div.item div p.cont{font-size: 20px; }
+div.main div.after_sale div.item div.left{text-align: right; width: 380px; margin-right: 20px;}
+div.main div.after_sale div.item div.right{text-align: left; width: 400px; float: right;}
+div.main div.after_sale div.item div.center{background: url("../images/sale_03.png") no-repeat center center;text-align: center; width: 380px;height: 276px;}
+div.main div.after_sale div.item div.center p.cont{margin-top:134px;}
+div.main div.after_sale div.item div p+p{margin-top: 5px;}
+div.main div.after_sale div.item div p+p+p{margin-top: 60px;}
+div.main div.after_sale div.item div p+p+p+p{margin-top: 5px;}
+div.main div.after_sale div.center div.promptly a{background: #fec514;}
+
+/*客户评价*/
+div.main div.evaluate{padding-bottom: 80px;}
+div.main div.evaluate div.center h2{padding-top: 80px;}
+div.main div.evaluate div.center div.item ul li{float: left; position: relative;}
+div.main div.evaluate div.center div.item ul li.q_se{margin-top: -2px;}
+div.main div.evaluate div.center div.item ul li:hover p{display: block\9;opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);}
+div.main div.evaluate div.center div.item ul li p{width: 100%; height: 100%; position: absolute;top: 0;
+    display: none\9; background: #000\9; filter:alpha(opacity=60)\9;
+    color: #fff;font-size: 18px;
+    background: rgba(0, 0, 0, 0.6);
+    filter:alpha(opacity=60);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;}
+div.main div.evaluate div.center div.item ul li p span{display: block;font-size:16px ;color:#fff;margin:40px 20px 0; line-height: 24px;}
+
+/*合作*/
+div.main div.partner{background: #f5f5f5;}
+div.main div.partner div.center div.item{background: #f5f5f5;}
+/*五大*/
+div.main div.feature{background: #fff;}
+
+
+/*后来加公共按键*/
+div.public_button{ margin:40px auto 0; width: 780px;}
+div.public_button img.char{float: left; font-size: 30px;color:#2f88fe; font-weight: bold; margin-top:5px;width: 377px;}
+div.public_button img.es{display: block;float: left; width: 57px; margin:0 6px 0 15px;}
+div.public_button p.hot{float: left; margin-right:6px;font-size: 16px; width: 32px;}
+div.public_button img.phone_mobile{float: left;font-size: 40px; font-weight: bold;color:#2f88fe; line-height: 39px; margin-top: 5px; width: 279px;}
+
+
+/*公共按钮*/
+div.promptly{text-align: center; margin-top: 48px; position: relative;}
+div.promptly a{background: #2f88fe; font-size: 20px; color:#ffff; line-height: 20px;padding:10px 76px 10px 64px; border-radius: 28px;}
+div.promptly img{display: block;position: absolute; left: 55%; top: 6px; cursor: pointer;}

@@ -1,0 +1,101 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>添加管理员</legend>
+    </fieldset>
+    <form class="layui-form layui-form-pane" lay-filter="form">
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">名称</label>
+            <div class="layui-input-4">
+                <input type="text" name="name" lay-verify="required" placeholder="名称" class="layui-input">
+            </div>
+            <div class="layui-form-mid layui-word-aux">
+                用户名在4到25个字符之间。
+            </div>
+        </div>
+         <div class="layui-form-item">
+            <label class="layui-form-label">状态</label>
+            <div class="layui-input-4">
+                <select name="status" lay-verify="required">
+                        <!-- <option value="0">状态</option> -->
+                        <option value="1">上线</option>
+                        <option value="2">下线</option>
+                    </select>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">图片</label>
+            <input type="hidden" name="avatar" id="avatar">
+            <div class="layui-input-block">
+                <div class="layui-upload">
+                    <button type="button" class="layui-btn layui-btn-primary" id="adBtn"><i class="icon icon-upload3"></i>点击上传</button>
+                    <div class="layui-upload-list">
+                        <img class="layui-upload-img" id="adPic">
+                        <p id="demoText"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="button" class="layui-btn" lay-submit="" lay-filter="submit">提交</button>
+                <a href="/admin/navigation/carousel.html" class="layui-btn layui-btn-primary">返回</a>
+            </div>
+        </div>
+    </form>
+</div>
+{include file="common/foot"/}
+<script type="text/javascript" src="/static/plugins/layui/layui.js"></script>
+<script>
+    layui.use(['form', 'layer','upload'], function () {
+        var form = layui.form, layer = layui.layer,$= layui.jquery,upload = layui.upload;
+        var info = null;
+        form.val("form", info);
+        if(info){
+            $('#adPic').attr('src',info.avatar);
+        }
+        form.render();
+        form.on('submit(submit)', function (data) {
+            loading =layer.load(1, {shade: [0.1,'#fff']});
+            $.post('{:url("carouselinsert")}', data.field, function (res) {
+                layer.close(loading);
+                if (res.code > 0) {
+                    layer.msg(res.msg, {time: 1800, icon: 1}, function () {
+                        location.href = res.url;
+                    });
+                } else {
+                    layer.msg(res.msg, {time: 1800, icon: 2});
+                }
+            });
+        });
+        //普通图片上传
+        var uploadInst = upload.render({
+            elem: '#adBtn'
+            ,url: '/admin/up_files/upload.html'
+            ,before: function(obj){
+                //预读本地文件示例，不支持ie8
+                obj.preview(function(index, file, result){
+                    $('#adPic').attr('src', result); //图片链接（base64）
+                });
+            },
+            done: function(res){
+                if(res.code>0){
+                    $('#avatar').val(res.url);
+                }else{
+                    //如果上传失败
+                    return layer.msg('上传失败');
+                }
+            }
+            ,error: function(){
+                //演示失败状态，并实现重传
+                var demoText = $('#demoText');
+                demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+                demoText.find('.demo-reload').on('click', function(){
+                    uploadInst.upload();
+                });
+            }
+        });
+    });
+</script>
