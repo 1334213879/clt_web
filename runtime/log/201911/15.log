@@ -1,0 +1,556 @@
+---------------------------------------------------------------
+[2019-11-15T08:42:12+08:00] 127.0.0.1 GET cc.cn/
+[运行时间：0.394023s] [吞吐率：2.54req/s] [内存消耗：2,997.65kb] [文件加载：80]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '',
+  'route' => 'home/index/index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'complete_match' => true,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\index_index.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'list',
+  14 => 'style',
+  15 => 'js',
+  16 => 'demo_time',
+  17 => 'adList',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `article` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`catdir`,`c`.`catname` FROM `article` `a` LEFT JOIN `category` `c` ON `a`.`catid`=`c`.`id` ORDER BY `createtime` DESC LIMIT 15 [ RunTime:0.004001s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `feast` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '10-19'  AND `type` = 2 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SELECT `id` FROM `feast` WHERE  `feast_date` = '11-15'  AND `type` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ad` [ RunTime:0.018002s ]
+[ sql ] [ SQL ] SELECT * FROM `ad` WHERE  `open` = 1  AND `as_id` = 1 ORDER BY `sort` ASC [ RunTime:0.002000s ]
+[ error ] [8]未定义数组索引: keyword[D:\phpStudy\PHPTutorial\WWW\clt_web\runtime\temp\c9933930ae1efc996e4e8190ca1c1fb3.php:7]
+[ error ] [8]未定义数组索引: info[D:\phpStudy\PHPTutorial\WWW\clt_web\runtime\temp\c9933930ae1efc996e4e8190ca1c1fb3.php:8]
+---------------------------------------------------------------
+[2019-11-15T08:42:13+08:00] 127.0.0.1 GET cc.cn/js/xslider.js
+[运行时间：0.366021s] [吞吐率：2.73req/s] [内存消耗：2,594.03kb] [文件加载：79]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.031001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1103 Incorrect table name ''[D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\library\think\db\Connection.php:687]
+---------------------------------------------------------------
+[2019-11-15T08:42:14+08:00] 127.0.0.1 GET cc.cn/static/home/images/ioic.png
+[运行时间：0.226013s] [吞吐率：4.42req/s] [内存消耗：2,558.22kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/static/home/css/common_index.css',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'code',
+  14 => 'msg',
+  15 => 'data',
+  16 => 'url',
+  17 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.032001s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-11-15T08:42:14+08:00] 127.0.0.1 GET cc.cn/js/53kf.js
+[运行时间：0.060004s] [吞吐率：16.67req/s] [内存消耗：1,295.31kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+---------------------------------------------------------------
+[2019-11-15T08:42:30+08:00] 127.0.0.1 GET cc.cn/home/Dh/gszc.html
+[运行时间：0.203012s] [吞吐率：4.93req/s] [内存消耗：2,533.21kb] [文件加载：74]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53gid2=10713843731007; 53gid1=10713843731007; 53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\application\home\view\dh_gszc.html [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[2019-11-15T08:42:30+08:00] 127.0.0.1 GET cc.cn/home/Dh/js/jquery.waypoints.min.js
+[运行时间：0.184011s] [吞吐率：5.43req/s] [内存消耗：2,531.84kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53gid2=10713843731007; 53gid1=10713843731007; 53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/home/Dh/gszc.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'code',
+  14 => 'msg',
+  15 => 'data',
+  16 => 'url',
+  17 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.040003s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[2019-11-15T08:42:31+08:00] 127.0.0.1 GET cc.cn/home/Dh/picture/10yuepic.png
+[运行时间：0.220013s] [吞吐率：4.55req/s] [内存消耗：2,531.87kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53gid2=10713843731007; 53gid1=10713843731007; 53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/home/Dh/gszc.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'code',
+  14 => 'msg',
+  15 => 'data',
+  16 => 'url',
+  17 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041002s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[2019-11-15T08:42:31+08:00] 127.0.0.1 GET cc.cn/home/Dh/images/10yue_nav.gif
+[运行时间：0.301017s] [吞吐率：3.32req/s] [内存消耗：2,531.87kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53gid2=10713843731007; 53gid1=10713843731007; 53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/home/Dh/gszc.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'code',
+  14 => 'msg',
+  15 => 'data',
+  16 => 'url',
+  17 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-11-15T08:42:32+08:00] 127.0.0.1 GET cc.cn/home/Dh/picture/10yuepic_l.png
+[运行时间：0.340019s] [吞吐率：2.94req/s] [内存消耗：2,531.98kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53gid2=10713843731007; 53gid1=10713843731007; 53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/home/Dh/gszc.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'code',
+  14 => 'msg',
+  15 => 'data',
+  16 => 'url',
+  17 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013001s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.042003s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[2019-11-15T08:42:32+08:00] 127.0.0.1 GET cc.cn/home/Dh/js/jquery.countup.min.js
+[运行时间：0.498029s] [吞吐率：2.01req/s] [内存消耗：2,531.86kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53gid2=10713843731007; 53gid1=10713843731007; 53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/home/Dh/gszc.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'code',
+  14 => 'msg',
+  15 => 'data',
+  16 => 'url',
+  17 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2019-11-15T08:42:32+08:00] 127.0.0.1 GET cc.cn/home/Dh/js/common.js
+[运行时间：0.393023s] [吞吐率：2.54req/s] [内存消耗：2,531.65kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53gid2=10713843731007; 53gid1=10713843731007; 53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/home/Dh/gszc.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'code',
+  14 => 'msg',
+  15 => 'data',
+  16 => 'url',
+  17 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[2019-11-15T08:42:32+08:00] 127.0.0.1 GET cc.cn/home/Dh/js/20190723.js
+[运行时间：0.272016s] [吞吐率：3.68req/s] [内存消耗：2,531.65kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53gid2=10713843731007; 53gid1=10713843731007; 53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/home/Dh/gszc.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'code',
+  14 => 'msg',
+  15 => 'data',
+  16 => 'url',
+  17 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007001s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[2019-11-15T08:42:32+08:00] 127.0.0.1 GET cc.cn/home/Dh/js/wow.min.js
+[运行时间：0.257014s] [吞吐率：3.89req/s] [内存消耗：2,531.65kb] [文件加载：76]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '53gid2=10713843731007; 53gid1=10713843731007; 53revisit=1573698398225; Hm_lvt_b86e7d1153b06232ebeea69ff4d16a50=1573698400; UM_distinctid=16e67bbee9a27c-02ed3764fc99f-54133310-1fa400-16e67bbee9b1c6; CNZZDATA1277836527=1661520065-1573698405-http%253A%252F%252Fcc.cn%252F%7C1573722692; PHPSESSID=l6ef40g1f62m5kb4fm391kb2i1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cc.cn/home/Dh/gszc.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cc.cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\clt_web\thinkphp\tpl/dispatch_jump.tpl [ array (
+  0 => 'config',
+  1 => 'userInfo',
+  2 => 'action',
+  3 => 'controller',
+  4 => 'title',
+  5 => 'keywords',
+  6 => 'description',
+  7 => 'pid',
+  8 => 'ptitle',
+  9 => 'category',
+  10 => 'linkList',
+  11 => 'changyan',
+  12 => 'time',
+  13 => 'code',
+  14 => 'msg',
+  15 => 'data',
+  16 => 'url',
+  17 => 'wait',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;port=3306;dbname=cltdemo_db;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `category` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `category` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `field` [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT * FROM `field` WHERE  `moduleid` IS NULL  AND `type` = 'catid' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `plugin` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT * FROM `plugin` WHERE  `code` = 'changyan' LIMIT 1 [ RunTime:0.002000s ]
