@@ -1,1 +1,0 @@
-document.writeln("<div style=\'display: none;width: 100%;height: 50px;z-index: 999;position:fixed;bottom:0;left:0;\'><a href=\'http://www.taoding.cn/article/content/244527.html\' target=\'_blank\' rel=\'nofollow\' style=\'display: block;\'><img src=\'https://www.sdxrbc.com/images/20190723.jpg\' alt=\'淘钉7月钜惠来袭！代理记账买一送一，抢到就是赚到！！\' style=\'width: 100%;\'></a></div>");
