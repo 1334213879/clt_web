@@ -1,0 +1,80 @@
+{include file="common/head"/}
+<div class="admin-main layui-anim layui-anim-upbit">
+    <fieldset class="layui-elem-field layui-field-title">
+        <legend>{$title}</legend>
+    </fieldset>
+    <blockquote class="layui-elem-quote">
+        <a href="{:url('carouseladd')}" class="layui-btn layui-btn-sm">{:lang('add')}栏目</a>
+    </blockquote>
+    <table class="layui-table">
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>名称</th>
+            <th>图片</th>
+            <th>状态</th>
+            <!-- <th>类型</th> -->
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody id="con">
+          {foreach $carousel as $key=>$vo } 
+          <tr>
+                <th>{$vo.id}</th>
+                <th>{$vo.name}</th>
+                <th><img src="{$vo.url}" style="height:50px;width: 50px;"></th>
+                <th>{if $vo.status == 1}
+                        上架
+                    {else /}
+                        下架
+                    {/if}
+                </th>
+              <!-- <th>{$vo.status}</th> -->
+                <th>
+                   <a class="green" href='carouseledit?id={$vo.id}' title="修改"><i class="icon icon-pencil2"></i></a> | 
+                   <a class="red" href="javascript:del({$vo.id})" title="删除"><i class="icon icon-bin"></i></a>
+                </th>
+            </tr>
+            {/foreach}
+        </tbody>
+        <tfoot>
+    </table>
+</div>
+{include file="common/foot"/}
+<script src="/static/common/js/jquery.2.1.1.min.js"></script>
+<script>
+    var layer;
+    layui.use('table', function(){
+        var $= layui.jquery,layer= layui.layer;
+        $('body').on('blur','.list_order',function() {
+            var id = $(this).attr('data-id');
+            var sort = $(this).val();
+            var loading = layer.load(1, {shade: [0.1, '#fff']});
+            $.post('{:url("cOrder")}',{id:id,sort:sort},function(res){
+                layer.close(loading);
+                if(res.code === 1){
+                    layer.msg(res.msg, {time: 1000, icon: 1}, function () {
+                        location.href = res.url;
+                    });
+                }else{
+                    layer.msg(res.msg,{time:1000,icon:2});
+                }
+            })
+        });
+    });
+    function del(id) {
+        layer.confirm('你确定要删除吗？', {icon: 3}, function (index) {
+            $.post('{:url("carouseldel")}', {id: id}, function (data) {
+                if (data.status === 1) {
+                    layer.alert(data.info, {icon: 6}, function(index){
+                        layer.close(index);
+                        window.location.href=data.url;
+                    });
+                }else{
+                    layer.msg(data.info,{icon:5});
+                }
+            });
+            layer.close(index);
+        });
+    }
+</script>

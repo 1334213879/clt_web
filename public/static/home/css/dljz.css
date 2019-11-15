@@ -1,0 +1,156 @@
+﻿/*页面主体*/
+/*banner*/
+div.main div.banner{}
+div.main div.banner ul li a img{width: 100%; min-width: 1200px;}
+div.banner ol{position:absolute; top:610px;}
+div.banner ol li{display:inline-block; background:#f9f9f9; width:8px; height:8px; margin:0 2px; border-radius:4px;}
+div.banner ol li.current{background:#269AEB;}
+
+/*为什么选择淘钉财税*/
+div.main div.select{padding-bottom: 60px;}
+div.main div.select div.center div.item div.sum{float: left; position: relative;height: 230px; width: 330px; padding-right:50px;border-right:1px solid #dfdfdf;}
+div.main div.select div.center div.item div.sum+div.sum{margin-left:50px; }
+div.main div.select div.center div.item div.sum+div.sum+div.sum{padding-right:0;border-right:none;}
+div.main div.select div.center div.item div.sum div.item_top{float: left;margin-left:43px; margin-top: 30px;}
+div.main div.select div.center div.item div.sum div.item_bot{float: left; width: 175px;text-align: right; margin-top: 35px;}
+div.main div.select div.center div.item div.sum div.item_bot p{font-size: 36px;color:#2957da;font-weight: bold;}
+div.main div.select div.center div.item div.sum div.item_bot p+p{font-size: 18px;color:#999;font-weight: normal;margin-top: 10px;}
+div.main div.select div.center div.item div.bot{font-size: 18px; width: 288px; margin-left:42px; margin-top: 35px; line-height: 28px;}
+div.main div.select div.center div.item div.bot p{line-height: 26px;}
+div.main div.select div.center div.item div.bot span{color:#ff4200;}
+div.main div.select div.center div.item div.sum div.circle{position: absolute;width: 30px;height: 30px; border-radius: 50%;background: #bbbbbb;  color: #fff;font-size: 18px;line-height: 30px; text-align: center; top:10px;left: 0; }
+
+
+
+
+/*记帐报税流程*/
+div.main div.flow{background: #f5f5f5;padding-bottom: 80px;}
+div.main div.flow div.center div.item ul li{float: left;}
+div.main div.flow div.center div.item ul li:nth-child(odd){width: 160px;}
+div.main div.flow div.center div.item ul li.even{margin-top:60px; margin-left:30px;margin-right:28px;}
+div.main div.flow div.center div.item ul li.end_left{margin-left:40px;margin-right:-5px;}
+div.main div.flow div.center div.item ul li.bot_end{margin-left:-2px;margin-right:-3px;}
+div.main div.flow div.center div.item ul li.end{width: 240px;}
+div.main div.flow div.center div.item ul li div{width: 160px; height: 160px; border:3px solid  #eb4b3f; margin: 0 auto; border-radius: 50%; text-align: center;}
+div.main div.flow div.center div.item ul li.circle_2 div{border:3px solid  #fbbc03;}
+div.main div.flow div.center div.item ul li.circle_3 div{border:3px solid  #33a753;}
+div.main div.flow div.center div.item ul li.circle_4 div{border:3px solid  #4184f4;}
+div.main div.flow div.center div.item ul li div img{margin-top:32px;}
+div.main div.flow div.center div.item ul li p.title{font-size: 24px ; color: #333; text-align: center;    margin: 20px 0 15px;  line-height: 24px;}
+div.main div.flow div.center div.item ul li p.content{font-size: 16px ; text-align: center;}
+
+/*淘钉代帐优势*/
+div.main div.advantage{padding-bottom:80px;}
+div.main div.advantage h2{padding-top: 80px;}
+div.main div.advantage div.center div.item{background: url("../images/adv_03.jpg") no-repeat center center;width: 100%; height: 680px;}
+div.main div.advantage div.center div.item ul{float: left;}
+div.main div.advantage div.center div.item ul li{color: #fff;}
+div.main div.advantage div.center div.item ul li+li{margin:45px 0;}
+div.main div.advantage div.center div.item ul li:first-child{font-size: 36px;font-weight: bold;text-align: center;margin-top:60px;}
+div.main div.advantage div.center div.item ul.ul_center li:first-child{margin-top:10px;}
+div.main div.advantage div.center div.item ul li p{font-size: 24px;font-weight: bold;}
+div.main div.advantage div.center div.item ul li p+p{font-size: 16px;font-weight: normal; margin-top: 20px;}
+div.main div.advantage div.center div.item ul.ul_left{width: 400px; margin-left:40px;}
+div.main div.advantage div.center div.item ul.ul_center{width: 110px; margin:0 105px;}
+div.main div.advantage div.center div.item ul.ul_right{width: 410px;}
+div.main div.advantage div.center div.item ul.ul_center li+li{color: #333;font-size: 24px; margin-top: 45px;  margin-bottom: 105px;}
+div.main div.advantage div.center div.item ul.ul_center li:first-child{font-size: 100px; font-weight: bold;color: #333;}
+
+/*公司成立后*/
+div.main div.setup{background: #f5f5f5; padding-bottom:80px;}
+div.main div.setup div.item div.left{width: 230px; float: left;  margin-right:34px;}
+div.main div.setup div.item div.right{width: 936px; float: left; margin-top:10px;}
+div.main div.setup div.item div.right p{font-size: 18px; margin-bottom:30px; line-height: 26px;}
+div.main div.setup div.item div.right p.last{margin-bottom: 10px;}
+div.main div.setup div.item div.right p span{font-size: 24px; color: #ff4200;font-weight: bold;}
+
+/*代账常见问题*/
+div.main div.issue{padding-bottom: 80px;}
+div.main div.issue div.center div.item div.left{float: left;width: 880px;}
+div.main div.issue div.center div.item div.right{float: right;}
+div.main div.issue div.center div.item div.left ul li div{background: #f5f5f5; font-size: 24px; color:#333; line-height: 24px; padding:15px 0;}
+div.main div.issue div.center div.item div.left ul li div span{    margin-right: 8px;color: #ff4200; margin-left:20px; font-weight: bold;}
+div.main div.issue div.center div.item div.left ul li p{width:860px; font-size: 18px; line-height: 24px; padding:8px 0 15px;  margin-left: 20px;}
+div.main div.issue div.center div.item div.left ul li p span{font-weight: bold;color:#2957da; margin-right: 5px;}
+div.main div.issue div.center div.item a.button{background: #ff4200; color: #fff; display: block;width: 180px; height: 50px; text-align: center;line-height: 50px;  font-size: 24px; margin-left: 390px; border-radius: 5px;margin-top: 15px;opacity: 0.9;}
+div.main div.issue div.center div.item a.button:hover{cursor: pointer; opacity: 1;}
+div.main div.issue div.center div.item a.button img{display: block; float: left; margin:9px 7px 0 22px;}
+div.main div.issue div.center div.item a.button span{display: block; float: left;}
+
+/*淘钉资深会计人员*/
+div.main div.senior{background: #f5f5f5;padding-bottom: 80px;}
+div.main div.senior div.center div.item{position: relative;overflow: hidden;}
+div.main div.senior div.center div.item span{position: absolute; display: block; top:60px; cursor: pointer;}
+div.main div.senior div.center div.item span.but_l{left: 0;}
+div.main div.senior div.center div.item span.but_r{right: 0;}
+div.main div.senior div.center div.item ul{width: 8000px;}
+div.main div.senior div.center div.item ul li{width: 360px; float: left;text-align: center;}
+div.main div.senior div.center div.item ul li img{width: 120px; height:160px;}
+div.main div.senior div.center div.item ul li+li{margin-left:60px;}
+div.main div.senior div.center div.item ul li p.name{font-size: 24px; color:#333; line-height: 24px; margin:20px 0 10px;}
+div.main div.senior div.center div.item ul li p.duty{font-size: 16px;color: #333; line-height: 16px;}
+div.main div.senior div.center div.item ul li p.cont{font-size: 18px; text-align: left; line-height: 26px; margin:25px 0 24px;    height: 100px;}
+div.main div.senior div.center div.item ul li a img{ margin:7px 4px 0 14px; display: block;float: left; width: 28px; height: 26px;}
+div.main div.senior div.center div.item ul li a p{float: left;}
+div.main div.senior div.center div.item ul li a{display: block;  font-size: 18px; color:#fff;width: 140px;height: 40px; border-radius: 5px;line-height: 40px; background: #ff4200; margin:0 auto; opacity: 0.9;}
+div.main div.senior div.center div.item ul li a:hover{opacity: 1;}
+
+/*客户评价*/
+div.main div.evaluate{padding-bottom: 80px;}
+div.main div.evaluate div.center h2{padding-top: 80px;}
+div.main div.evaluate div.center div.item ul li{float: left; position: relative;}
+div.main div.evaluate div.center div.item ul li.q_se{margin-top: -2px;}
+div.main div.evaluate div.center div.item ul li:hover p{display: block\9; opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);}
+div.main div.evaluate div.center div.item ul li p{ width: 100%; height: 100%; position: absolute;top: 0;display: none\9; background: #000\9; filter:alpha(opacity=60)\9;
+    background: rgba(0, 0, 0, 0.6);
+    filter:alpha(opacity=60);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+
+}
+div.main div.evaluate div.center div.item ul li p span{display: block;font-size:16px ;color:#fff;margin:40px 20px 0;line-height: 24px;}
+
+/*合作*/
+div.main div.partner{background: #f5f5f5;}
+div.main div.partner div.center div.item{background: #f5f5f5;}
+/*五大*/
+div.main div.feature{background: #fff;}
+
+
+
+/*公用  电话*/
+/*后来加的*/
+div.main div.center div.under{ width: 800px; margin:0 auto; padding-top:40px;}
+div.main div.center div.under p.hint{float: left; font-size: 22px; color:#333; font-weight: bold;    margin-top: 10px;}
+div.main div.center div.under img{width: 38px; float: left;margin-left: 10px;}
+div.main div.center div.under div.mobile{ float: left; }
+div.main div.center div.under div.mobile span.free_of{font-size: 16px;    margin-left: -12px;}
+div.main div.center div.under div.mobile span.mobile_num{font-size: 30px;color: #2857d9; font-weight: bold;}
+div.main div.center div.under a.mobile_button{display: block; float: left; background: #ff4200; color:#fff; font-size: 24px; line-height: 24px; padding:10px 30px; border-radius: 5px; margin-left: 15px;}
+
+/*公用 立即咨询*/
+div.main div.center div.insert_consult{ padding-top: 40px; width: 550px; margin: 0 auto;}
+div.main div.center div.insert_consult p.char{float: left; font-size: 22px;font-weight: bold;color: #333; line-height: 50px;}
+div.main div.center div.insert_consult a{display: block; float: left; font-size: 24px;color: #fff; background: #ff4200; padding:10px 30px; border-radius: 5px; margin-left: 20px;  }
+
+/*公共 独立按钮*/
+ div.dlann{text-align: center; margin-top: 40px;}
+ div.dlann a{padding:10px 30px;border-radius: 5px; color: #fff; background: #ff4200; font-size:24px; }

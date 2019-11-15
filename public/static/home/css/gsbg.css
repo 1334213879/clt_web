@@ -1,0 +1,136 @@
+﻿/*网站主体*/
+/*banner*/
+div.main div.banner{background: url("../images/gsbgeng.jpg") no-repeat center center;width: 100%; min-width: 1200px; height: 520px;}
+div.main div.banner div.center{overflow: hidden;}
+div.main div.banner div.center a{display: block; width: 230px;height: 48px; margin:344px auto 0;}
+
+/*我们的优势*/
+div.main div.advantage{padding-bottom: 80px;}
+div.main div.advantage div.center div.item{}
+div.main div.advantage div.center div.item ul li{float: left; width: 380px;height: 130px; background: #9fd965;}
+div.main div.advantage div.center div.item ul li+li{margin-left:30px; background: #66a3ff;}
+div.main div.advantage div.center div.item ul li+li+li{background: #ffb848;}
+div.main div.advantage div.center div.item ul li div{float: left; }
+div.main div.advantage div.center div.item ul li div.left{margin: 32px 0 0 30px; background: url("../images/adv_03.png") no-repeat;width:75px; height: 66px; font-size: 30px;color: #fff; text-align: center;line-height: 66px;}
+div.main div.advantage div.center div.item ul li div.right{margin: 40px 0 0 20px; }
+div.main div.advantage div.center div.item ul li div.right p{font-size: 24px; color:#fff;}
+div.main div.advantage div.center div.item ul li div.right p+p{font-size: 18px;}
+
+/*变更范围*/
+div.main div.scope{ background: #f5f5f5;padding-bottom: 80px;}
+div.main div.scope div.center div.item{background: #fff;}
+div.main div.scope div.center div.item ul+ul{border-top: 2px solid #eaeaea;}
+div.main div.scope div.center div.item ul li{float: left; width:298.5px; height: 250px; text-align: center;}
+div.main div.scope div.center div.item ul li+li{border-left: 2px solid #eaeaea;}
+div.main div.scope div.center div.item ul li img{margin-top:60px;}
+div.main div.scope div.center div.item ul li p{font-size: 24px;margin-top:10px;}
+div.main div.scope div.center div.item ul li img.bgfw_hover{display: none;}
+/*div.main div.scope div.center div.item ul li:hover img.bgfw{display: none;}*/
+/*div.main div.scope div.center div.item ul li:hover{background: #66a3ff; cursor: pointer;}*/
+/*div.main div.scope div.center div.item ul li:hover img.bgfw_hover{display: inherit; }*/
+div.main div.scope div.center div.item ul li:hover a{color: #333;}
+div.main div.scope div.center div.change{width: 510px;}
+
+/*变更流程*/
+div.main div.flow{padding-bottom: 80px;}
+div.main div.flow h2{padding-top: 80;}
+div.main div.flow div.item{position: relative;height: 150px;}
+div.main div.flow div.item ul{z-index: 10;position: absolute;}
+div.main div.flow div.item ul li{margin-left:30px;float: left; font-size: 24px; color:#fff; text-align: center; line-height: 150px;}
+div.main div.flow div.item ul li+li{margin-left:180px;}
+div.main div.flow div.item ul li.li1{background: url("../images/flow_03.png") no-repeat center center;width: 150px; height: 150px;}
+div.main div.flow div.item ul li.li2{background: url("../images/flow_05.png") no-repeat center center;width: 150px; height: 150px;}
+div.main div.flow div.item ul li.li3{background: url("../images/flow_07.png") no-repeat center center;width: 150px; height: 150px;}
+div.main div.flow div.item ul li.li4{background: url("../images/flow_09.png") no-repeat center center;width: 150px; height: 150px;}
+div.main div.flow div.item div.line{width: 1100px; height: 2px; background: #d7edfe; position: absolute;top:50%;left: 50px; z-index: 1;}
+div.main div.flow div.center div.change{width: 525px;}
+
+/*未及时变更的风险*/
+div.main div.risk{padding-bottom: 80px;background: #f5f5f5;}
+div.main div.risk div.center div.item ul li{float: left;}
+div.main div.risk div.center div.item ul li+li{margin-left:44px;}
+div.main div.risk div.center div.item ul li div{overflow: hidden;}
+div.main div.risk div.center div.item ul li div.rs1{background: url("../images/risk_03.png") no-repeat center center;width: 267px;
+    height: 180px;}
+div.main div.risk div.center div.item ul li div.rs2{background: url("../images/risk_05.png") no-repeat center center;width: 267px;
+    height: 180px;}
+div.main div.risk div.center div.item ul li div.rs3{background: url("../images/risk_07.png") no-repeat center center;width: 267px;
+    height: 180px;}
+div.main div.risk div.center div.item ul li div.rs4{background: url("../images/risk_09.png") no-repeat center center;width: 267px;
+    height: 180px;}
+div.main div.risk div.center div.item ul li div p{overflow: hidden; font-size: 24px;background: #f5f5f5;width: 228px; height: 40px;margin:140px auto 0; text-align: center; line-height: 45px;}
+div.main div.risk div.center div.item ul li p.describe{width: 267px; font-size: 18px; margin-top:25px;}
+div.main div.risk div.center div.change{width: 510px;}
+
+/*淘钉财税变更优势对比*/
+div.main div.comparison{padding-bottom: 80px;}
+div.main div.comparison div.center div.item div.comp_head{height: 81px;}
+div.main div.comparison div.center div.item div.comp_head p{font-size: 24px; font-weight: bold; float: left; line-height: 70px;}
+div.main div.comparison div.center div.item div.comp_head p.diyige{width:308px;height:81px;background: #66a3ff;border-radius: 40px;  text-align: center;line-height:81px;color:#fff;font-size:27px;
+    margin-left:217px;}
+div.main div.comparison div.center div.item div.comp_head p.dierge{display: block;border:5px solid #ff8b7b; border-radius:50%;line-height: 74px;width: 79px;height: 79px; text-align: center;font-size: 52px;margin:0 61px;color:#ff8b7b;}
+div.main div.comparison div.center div.item div.comp_head p.disange{width:308px;height:81px;background: #66a3ff;border-radius: 40px;  text-align: center;line-height:81px;color:#fff;font-size:27px;}
+
+div.main div.comparison div.center div.item ul{float: left;}
+div.main div.comparison div.center div.item ul li{height: 120px;}
+div.main div.comparison div.center div.item ul li+li{border-top: 1px solid #ededed;}
+div.main div.comparison div.center div.item ul.comp_left li{font-size: 20px; line-height: 120px; width: 100px; text-align: center; border-right: 1px solid #ededed;background: #66a3ff;color:#fff;}
+
+div.main div.comparison div.center div.item ul.comp_center li{width: 630px; border-right: 1px solid #ededed;line-height: 120px;position: relative}
+div.main div.comparison div.center div.item ul.comp_center li p.title{font-size: 16px; float:left;color:#333;padding:48px 15px;line-height:24px;}
+div.main div.comparison div.center div.item ul.comp_center li i {background: url("../images/sure.jpg")no-repeat;position: absolute;top:47px;right:19px;width:31px;height:20px;}
+div.main div.comparison div.center div.item ul.comp_center li p.title span:nth-of-type(1){color:#333;display: block;float: left;margin-right:10px;}
+div.main div.comparison div.center div.item ul.comp_center li p.title span:nth-of-type(2){color:#555;display: block;float: left;}
+div.main div.comparison div.center div.item ul.comp_right li{font-size: 16px;line-height: 120px; width: 468px; text-indent: 16px;position: relative}
+div.main div.comparison div.center div.item ul.comp_right li i{background: url("../images/error.jpg")no-repeat;position: absolute;top:50px;right:-2px;width:31px;height:20px;}
+div.main div.comparison div.center div.change{width: 525px;}
+
+/*客户评价*/
+div.main div.evaluate{background: #f5f5f5; padding-bottom: 80px;}
+div.main div.evaluate div.center div.item ul li{float: left;}
+div.main div.evaluate div.center div.item ul li+li{margin-left:10px;}
+div.main div.evaluate div.center div.item ul li div{position: relative;}
+div.main div.evaluate div.center div.item ul li div+div{margin-top:10px;}
+div.main div.evaluate div.center div.item ul li.left_1{width: 240px; position: relative;}
+div.main div.evaluate div.center div.item ul li.left_2{width: 220px;}
+div.main div.evaluate div.center div.item ul li.left_2 div{position: relative;}
+div.main div.evaluate div.center div.item ul li.center{width: 240px;}
+div.main div.evaluate div.center div.item ul li.right_1{width: 220px;}
+div.main div.evaluate div.center div.item ul li.right_2{width: 240px; position: relative;}
+div.main div.evaluate div.center div.item ul li p{position: absolute; /*top:0;*/width:100%;
+    display: none\9; background: #000\9; filter:alpha(opacity=60)\9;
+    color: #fff;font-size: 18px; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    filter:alpha(opacity=60);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+/*div.main div.evaluate div.center div.item ul .hov:hover p{display: block\9;opacity: 1;*/
+    /*-webkit-transform: scale(1);*/
+    /*-moz-transform: scale(1);*/
+    /*-ms-transform: scale(1);*/
+    /*-o-transform: scale(1);*/
+    /*transform: scale(1);}*/
+
+
+div.main div.evaluate div.center div.item ul li p span{display: block; padding:10% 30px 0; line-height: 24px;    font-size: 16px;}
+div.main div.evaluate div.center div.item ul li div p span{ padding:15% 30px 0;}
+div.main div.evaluate div.center div.item ul li.center div+div p span{padding:0 30px; }
+
+
+/*公共*/
+div.change{ border:1px solid #c1e4ff; width: 500px; border-radius: 20px; margin: 40px auto 0;}
+div.change p{float: left; font-size: 16px; line-height: 40px; padding-left: 43px;}
+div.change p span{font-size: 22px;font-weight: bold;color:#66a3fe;}
+div.change a{display: block; float: right; padding:8px 23px; background: #66a3fe; color:#fff; border-radius: 20px; font-size: 22px;}
